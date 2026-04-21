@@ -1,0 +1,46 @@
+# 滩坑水库 SQL 语义说明
+
+## 核心问法映射
+- 正常蓄水位 -> reservoir_control_index.NORMAL_WL
+- 防洪高水位 -> reservoir_control_index.FLOOD_HIGH_WL
+- 梅汛期限制水位 -> reservoir_control_index.MEIYU_LIMIT_WL
+- 台汛期限制水位 -> reservoir_control_index.TYPHOON_LIMIT_WL
+- 月初水位 -> reservoir_monthly_operation_plan.month_start_wl_m
+- 月末水位 -> reservoir_monthly_operation_plan.month_end_wl_m
+- 发电量 -> reservoir_monthly_operation_plan.generation_10k_kwh
+- 联系电话 -> reservoir_contact_directory.phone_number
+
+## 单位约定
+- 所有 *_100m_m3 字段在本项目中统一表示 亿m3。
+- 例如 inflow_100m_m3 = 7.8 表示 7.8 亿m3，不是 780 万m3。
+- generation_10k_kwh 表示 万kWh。
+- month_start_wl_m 和 month_end_wl_m 表示 m。
+
+## 关键控制指标
+- 校核洪水位: 169.15m
+- 设计洪水位: 165.87m
+- 防洪高水位: 161.5m
+- 正常蓄水位: 160.0m
+- 梅汛期限制水位: 160.0m
+- 台汛期限制水位: 156.5m
+- 死水位: 120.0m
+- 总库容: 41.9亿m3
+- 正常库容: 35.2亿m3
+- 调节库容: 21.26亿m3
+- 防洪库容: 3.5亿m3
+- 设计保证出力: 87.75MW
+- 多年平均年发电量: 10.23亿kWh
+
+## 2025 分月调度计划摘要
+- 1月: 来水0.45亿m3, 月末水位150.28m, 发电量2500万kWh
+- 2月: 来水1.4亿m3, 月末水位150.63m, 发电量3500万kWh
+- 3月: 来水3.0亿m3, 月末水位151.1m, 发电量8000万kWh
+- 4月: 来水2.6亿m3, 月末水位150.33m, 发电量9000万kWh
+- 5月: 来水4.25亿m3, 月末水位150.02m, 发电量13000万kWh
+- 6月: 来水7.8亿m3, 月末水位151.61m, 发电量20000万kWh
+- 7月: 来水3.2亿m3, 月末水位150.16m, 发电量12000万kWh
+- 8月: 来水3.0亿m3, 月末水位150.01m, 发电量9000万kWh
+- 9月: 来水3.3亿m3, 月末水位150.35m, 发电量9000万kWh
+- 10月: 来水1.2亿m3, 月末水位149.18m, 发电量5500万kWh
+- 11月: 来水1.4亿m3, 月末水位148.32m, 发电量5500万kWh
+- 12月: 来水1.1亿m3, 月末水位147.52m, 发电量4500万kWh

@@ -1,0 +1,1106 @@
+{
+  "reservoir_basic_info": {
+    "reservoir_code": "TANKENG",
+    "reservoir_name": "滩坑水电站",
+    "station_name": "滩坑水电站",
+    "river_name": "小溪干流下游",
+    "basin_name": "瓯江流域",
+    "location_desc": "青田县境内小溪干流下游",
+    "upstream_area_km2": 3330.0,
+    "installed_capacity_mw": 604.0,
+    "reservoir_type": "多年调节",
+    "main_functions": "发电、防洪、综合利用",
+    "owner_org": "浙江浙能北海水力发电有限公司",
+    "source_doc": "tankeng_2025_plan.pdf"
+  },
+  "control_indices": [
+    {
+      "index_code": "CHECK_FLOOD_WL",
+      "index_name": "校核洪水位",
+      "index_value": 169.15,
+      "unit": "m",
+      "season_tag": "全年",
+      "control_type": "水位"
+    },
+    {
+      "index_code": "DESIGN_FLOOD_WL",
+      "index_name": "设计洪水位",
+      "index_value": 165.87,
+      "unit": "m",
+      "season_tag": "全年",
+      "control_type": "水位"
+    },
+    {
+      "index_code": "FLOOD_HIGH_WL",
+      "index_name": "防洪高水位",
+      "index_value": 161.5,
+      "unit": "m",
+      "season_tag": "全年",
+      "control_type": "水位"
+    },
+    {
+      "index_code": "NORMAL_WL",
+      "index_name": "正常蓄水位",
+      "index_value": 160.0,
+      "unit": "m",
+      "season_tag": "全年",
+      "control_type": "水位"
+    },
+    {
+      "index_code": "MEIYU_LIMIT_WL",
+      "index_name": "梅汛期限制水位",
+      "index_value": 160.0,
+      "unit": "m",
+      "season_tag": "梅汛期",
+      "control_type": "水位"
+    },
+    {
+      "index_code": "TYPHOON_LIMIT_WL",
+      "index_name": "台汛期限制水位",
+      "index_value": 156.5,
+      "unit": "m",
+      "season_tag": "台汛期",
+      "control_type": "水位"
+    },
+    {
+      "index_code": "DEAD_WL",
+      "index_name": "死水位",
+      "index_value": 120.0,
+      "unit": "m",
+      "season_tag": "全年",
+      "control_type": "水位"
+    },
+    {
+      "index_code": "TOTAL_CAPACITY",
+      "index_name": "总库容",
+      "index_value": 41.9,
+      "unit": "亿m3",
+      "season_tag": "全年",
+      "control_type": "库容"
+    },
+    {
+      "index_code": "NORMAL_CAPACITY",
+      "index_name": "正常库容",
+      "index_value": 35.2,
+      "unit": "亿m3",
+      "season_tag": "全年",
+      "control_type": "库容"
+    },
+    {
+      "index_code": "REGULATION_CAPACITY",
+      "index_name": "调节库容",
+      "index_value": 21.26,
+      "unit": "亿m3",
+      "season_tag": "全年",
+      "control_type": "库容"
+    },
+    {
+      "index_code": "FLOOD_CAPACITY",
+      "index_name": "防洪库容",
+      "index_value": 3.5,
+      "unit": "亿m3",
+      "season_tag": "汛期",
+      "control_type": "库容"
+    },
+    {
+      "index_code": "ASSURED_OUTPUT",
+      "index_name": "设计保证出力",
+      "index_value": 87.75,
+      "unit": "MW",
+      "season_tag": "全年",
+      "control_type": "装机"
+    },
+    {
+      "index_code": "AVG_ANNUAL_GENERATION",
+      "index_name": "多年平均年发电量",
+      "index_value": 10.23,
+      "unit": "亿kWh",
+      "season_tag": "全年",
+      "control_type": "发电"
+    }
+  ],
+  "period_rules": [
+    {
+      "rule_year": 2025,
+      "period_code": "MEIYU",
+      "period_name": "梅汛期",
+      "start_date": "2025-04-15",
+      "end_date": "2025-06-30",
+      "control_water_level_m": 160.0,
+      "upper_water_level_m": 160.0,
+      "lower_water_level_m": null,
+      "rule_text": "梅汛期限制水位和起调水位为160.00m"
+    },
+    {
+      "rule_year": 2025,
+      "period_code": "TRANSITION",
+      "period_name": "过渡期",
+      "start_date": "2025-07-01",
+      "end_date": "2025-07-15",
+      "control_water_level_m": null,
+      "upper_water_level_m": 160.0,
+      "lower_water_level_m": 156.5,
+      "rule_text": "梅汛期到台汛期过渡期，水位由160.00m逐渐过渡至156.50m"
+    },
+    {
+      "rule_year": 2025,
+      "period_code": "TYPHOON",
+      "period_name": "台汛期",
+      "start_date": "2025-07-16",
+      "end_date": "2025-10-15",
+      "control_water_level_m": 156.5,
+      "upper_water_level_m": 156.5,
+      "lower_water_level_m": null,
+      "rule_text": "台汛期限制水位和起调水位为156.50m"
+    },
+    {
+      "rule_year": 2025,
+      "period_code": "NON_FLOOD",
+      "period_name": "非汛期",
+      "start_date": "2025-11-01",
+      "end_date": "2026-03-31",
+      "control_water_level_m": 160.0,
+      "upper_water_level_m": 160.0,
+      "lower_water_level_m": 120.0,
+      "rule_text": "非汛期兴利上限水位160.00m，兴利下限水位120.00m"
+    }
+  ],
+  "dispatch_rules": [
+    {
+      "rule_year": 2025,
+      "rule_code": "DISPATCH_001",
+      "rule_name": "台汛期超过汛限后补偿凑泄",
+      "scenario_type": "FLOOD",
+      "period_code": "TYPHOON",
+      "trigger_type": "WATER_LEVEL",
+      "min_water_level_m": 156.5,
+      "max_water_level_m": 161.5,
+      "threshold_flow_m3s": 14000,
+      "forecast_condition": "考虑滩坑至鹤城站区间流量及5小时传播时间",
+      "action_text": "按补偿凑泄方式调度，控制滩坑水库下泄流量，使组合流量不超过14000m3/s",
+      "action_type": "COMPENSATED_RELEASE",
+      "priority_no": 1
+    },
+    {
+      "rule_year": 2025,
+      "rule_code": "DISPATCH_002",
+      "rule_name": "梅汛期和枯水期超过正常蓄水位后补偿凑泄",
+      "scenario_type": "FLOOD",
+      "period_code": "MEIYU",
+      "trigger_type": "WATER_LEVEL",
+      "min_water_level_m": 160.0,
+      "max_water_level_m": 161.5,
+      "threshold_flow_m3s": null,
+      "forecast_condition": null,
+      "action_text": "按补偿凑泄方式调度，最小下泄流量为机组发电流量",
+      "action_type": "COMPENSATED_RELEASE",
+      "priority_no": 2
+    },
+    {
+      "rule_year": 2025,
+      "rule_code": "DISPATCH_003",
+      "rule_name": "防洪高水位以上小超限控制流量下泄",
+      "scenario_type": "FLOOD",
+      "period_code": null,
+      "trigger_type": "WATER_LEVEL",
+      "min_water_level_m": 161.5,
+      "max_water_level_m": 161.7,
+      "threshold_flow_m3s": 6000,
+      "forecast_condition": null,
+      "action_text": "当161.5m<Z<=161.7m时，按6000m3/s控制流量下泄洪水",
+      "action_type": "CONTROLLED_RELEASE",
+      "priority_no": 3
+    },
+    {
+      "rule_year": 2025,
+      "rule_code": "DISPATCH_004",
+      "rule_name": "超161.7m全开溢洪道并机组参与泄洪",
+      "scenario_type": "FLOOD",
+      "period_code": null,
+      "trigger_type": "WATER_LEVEL",
+      "min_water_level_m": 161.7,
+      "max_water_level_m": 165.27,
+      "threshold_flow_m3s": null,
+      "forecast_condition": null,
+      "action_text": "溢洪道闸门全部打开下泄洪水，电站机组参与泄洪",
+      "action_type": "FULL_SPILLWAY_OPEN",
+      "priority_no": 4
+    },
+    {
+      "rule_year": 2025,
+      "rule_code": "DISPATCH_005",
+      "rule_name": "超0.2%洪水位开启泄洪洞并停发",
+      "scenario_type": "EXTREME_FLOOD",
+      "period_code": null,
+      "trigger_type": "WATER_LEVEL",
+      "min_water_level_m": 165.27,
+      "max_water_level_m": null,
+      "threshold_flow_m3s": null,
+      "forecast_condition": null,
+      "action_text": "溢洪道闸门全部打开，并开启泄洪洞参与泄洪，发电暂停",
+      "action_type": "SPILLWAY_AND_TUNNEL",
+      "priority_no": 5
+    }
+  ],
+  "dispatch_authority_rules": [
+    {
+      "rule_year": 2025,
+      "authority_code": "AUTH_001",
+      "period_code": "MEIYU",
+      "trigger_desc": "梅汛期库水位不超过160.00m",
+      "min_water_level_m": null,
+      "max_water_level_m": 160.0,
+      "min_flow_m3s": null,
+      "max_flow_m3s": null,
+      "authority_org": "浙江浙能北海水力发电有限公司",
+      "copy_to_orgs": null,
+      "remarks": null
+    },
+    {
+      "rule_year": 2025,
+      "authority_code": "AUTH_002",
+      "period_code": "MEIYU",
+      "trigger_desc": "梅汛期库水位超过160.00m",
+      "min_water_level_m": 160.0,
+      "max_water_level_m": null,
+      "min_flow_m3s": null,
+      "max_flow_m3s": null,
+      "authority_org": "丽水市水利局",
+      "copy_to_orgs": null,
+      "remarks": null
+    },
+    {
+      "rule_year": 2025,
+      "authority_code": "AUTH_003",
+      "period_code": "TYPHOON",
+      "trigger_desc": "台汛期库水位低于156.50m",
+      "min_water_level_m": null,
+      "max_water_level_m": 156.5,
+      "min_flow_m3s": null,
+      "max_flow_m3s": null,
+      "authority_org": "浙江浙能北海水力发电有限公司",
+      "copy_to_orgs": null,
+      "remarks": null
+    },
+    {
+      "rule_year": 2025,
+      "authority_code": "AUTH_004",
+      "period_code": "TYPHOON",
+      "trigger_desc": "台汛期库水位超过156.50m",
+      "min_water_level_m": 156.5,
+      "max_water_level_m": null,
+      "min_flow_m3s": null,
+      "max_flow_m3s": null,
+      "authority_org": "丽水市水利局",
+      "copy_to_orgs": null,
+      "remarks": null
+    }
+  ],
+  "monthly_operation_plan": [
+    {
+      "plan_month": 1,
+      "rainfall_mm": 50,
+      "inflow_100m_m3": 0.45,
+      "upstream_intake_100m_m3": 0.0,
+      "month_start_wl_m": 150.93,
+      "month_end_wl_m": 150.28,
+      "generation_water_100m_m3": 0.85,
+      "water_consumption_rate_m3_per_kwh": 3.38,
+      "generation_10k_kwh": 2500
+    },
+    {
+      "plan_month": 2,
+      "rainfall_mm": 100,
+      "inflow_100m_m3": 1.4,
+      "upstream_intake_100m_m3": 0.0,
+      "month_start_wl_m": 150.28,
+      "month_end_wl_m": 150.63,
+      "generation_water_100m_m3": 1.19,
+      "water_consumption_rate_m3_per_kwh": 3.4,
+      "generation_10k_kwh": 3500
+    },
+    {
+      "plan_month": 3,
+      "rainfall_mm": 155,
+      "inflow_100m_m3": 3.0,
+      "upstream_intake_100m_m3": 0.0,
+      "month_start_wl_m": 150.63,
+      "month_end_wl_m": 151.1,
+      "generation_water_100m_m3": 2.71,
+      "water_consumption_rate_m3_per_kwh": 3.39,
+      "generation_10k_kwh": 8000
+    },
+    {
+      "plan_month": 4,
+      "rainfall_mm": 135,
+      "inflow_100m_m3": 2.6,
+      "upstream_intake_100m_m3": 0.0184,
+      "month_start_wl_m": 151.1,
+      "month_end_wl_m": 150.33,
+      "generation_water_100m_m3": 3.05,
+      "water_consumption_rate_m3_per_kwh": 3.39,
+      "generation_10k_kwh": 9000
+    },
+    {
+      "plan_month": 5,
+      "rainfall_mm": 205,
+      "inflow_100m_m3": 4.25,
+      "upstream_intake_100m_m3": 0.0188,
+      "month_start_wl_m": 150.33,
+      "month_end_wl_m": 150.02,
+      "generation_water_100m_m3": 4.42,
+      "water_consumption_rate_m3_per_kwh": 3.4,
+      "generation_10k_kwh": 13000
+    },
+    {
+      "plan_month": 6,
+      "rainfall_mm": 290,
+      "inflow_100m_m3": 7.8,
+      "upstream_intake_100m_m3": 0.025,
+      "month_start_wl_m": 150.02,
+      "month_end_wl_m": 151.61,
+      "generation_water_100m_m3": 6.8,
+      "water_consumption_rate_m3_per_kwh": 3.4,
+      "generation_10k_kwh": 20000
+    },
+    {
+      "plan_month": 7,
+      "rainfall_mm": 150,
+      "inflow_100m_m3": 3.2,
+      "upstream_intake_100m_m3": 0.034,
+      "month_start_wl_m": 151.61,
+      "month_end_wl_m": 150.16,
+      "generation_water_100m_m3": 4.06,
+      "water_consumption_rate_m3_per_kwh": 3.38,
+      "generation_10k_kwh": 12000
+    },
+    {
+      "plan_month": 8,
+      "rainfall_mm": 135,
+      "inflow_100m_m3": 3.0,
+      "upstream_intake_100m_m3": 0.033,
+      "month_start_wl_m": 150.16,
+      "month_end_wl_m": 150.01,
+      "generation_water_100m_m3": 3.06,
+      "water_consumption_rate_m3_per_kwh": 3.4,
+      "generation_10k_kwh": 9000
+    },
+    {
+      "plan_month": 9,
+      "rainfall_mm": 155,
+      "inflow_100m_m3": 3.3,
+      "upstream_intake_100m_m3": 0.0323,
+      "month_start_wl_m": 150.01,
+      "month_end_wl_m": 150.35,
+      "generation_water_100m_m3": 3.06,
+      "water_consumption_rate_m3_per_kwh": 3.4,
+      "generation_10k_kwh": 9000
+    },
+    {
+      "plan_month": 10,
+      "rainfall_mm": 55,
+      "inflow_100m_m3": 1.2,
+      "upstream_intake_100m_m3": 0.034,
+      "month_start_wl_m": 150.35,
+      "month_end_wl_m": 149.18,
+      "generation_water_100m_m3": 1.87,
+      "water_consumption_rate_m3_per_kwh": 3.4,
+      "generation_10k_kwh": 5500
+    },
+    {
+      "plan_month": 11,
+      "rainfall_mm": 75,
+      "inflow_100m_m3": 1.4,
+      "upstream_intake_100m_m3": 0.034,
+      "month_start_wl_m": 149.18,
+      "month_end_wl_m": 148.32,
+      "generation_water_100m_m3": 1.88,
+      "water_consumption_rate_m3_per_kwh": 3.42,
+      "generation_10k_kwh": 5500
+    },
+    {
+      "plan_month": 12,
+      "rainfall_mm": 55,
+      "inflow_100m_m3": 1.1,
+      "upstream_intake_100m_m3": 0.0275,
+      "month_start_wl_m": 148.32,
+      "month_end_wl_m": 147.52,
+      "generation_water_100m_m3": 1.54,
+      "water_consumption_rate_m3_per_kwh": 3.43,
+      "generation_10k_kwh": 4500
+    }
+  ],
+  "warning_rules": [
+    {
+      "rule_year": 2025,
+      "warning_code": "WARN_001",
+      "warning_name": "高水位预警",
+      "warning_type": "HIGH_WL",
+      "trigger_desc": "蓄水位超过160.00m且预报最高水位将达到161.50m",
+      "trigger_water_level_m": 160.0,
+      "trigger_flow_m3s": null,
+      "lead_time_minutes": null,
+      "warning_scope": "景宁大均、红星、鹤溪、渤海、九龙，青田北山、岭根",
+      "disposal_text": "提前发布风险预警，做好人员转移、堤防巡防查险及抢险救援准备"
+    },
+    {
+      "rule_year": 2025,
+      "warning_code": "WARN_002",
+      "warning_name": "泄洪放水预警",
+      "warning_type": "RELEASE",
+      "trigger_desc": "梅汛期逼近159.50m或台汛期逼近156.00m，根据气象预报实施主动性预泄",
+      "trigger_water_level_m": null,
+      "trigger_flow_m3s": null,
+      "lead_time_minutes": 60,
+      "warning_scope": "上游坝前300m，下游至左右岸交通桥",
+      "disposal_text": "在预定闸门开启时间前1小时拉泄洪警报，并派人巡逻检查"
+    }
+  ],
+  "gate_operation_rules": [
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "OPEN",
+      "sequence_no": 1,
+      "gate_no": "#1",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "OPEN",
+      "sequence_no": 2,
+      "gate_no": "#6",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "OPEN",
+      "sequence_no": 3,
+      "gate_no": "#3",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "OPEN",
+      "sequence_no": 4,
+      "gate_no": "#4",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "OPEN",
+      "sequence_no": 5,
+      "gate_no": "#2",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "OPEN",
+      "sequence_no": 6,
+      "gate_no": "#5",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "CLOSE",
+      "sequence_no": 1,
+      "gate_no": "#5",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "CLOSE",
+      "sequence_no": 2,
+      "gate_no": "#2",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "CLOSE",
+      "sequence_no": 3,
+      "gate_no": "#4",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "CLOSE",
+      "sequence_no": 4,
+      "gate_no": "#3",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "CLOSE",
+      "sequence_no": 5,
+      "gate_no": "#6",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    },
+    {
+      "rule_year": 2025,
+      "gate_group_name": "spillway_main",
+      "operation_type": "CLOSE",
+      "sequence_no": 6,
+      "gate_no": "#1",
+      "remarks": "多数孔开启，切忌少数孔高开度泄洪"
+    }
+  ],
+  "annual_operation_stats": [
+    {
+      "stat_year": 2009,
+      "rainfall_mm": 1680.8,
+      "inflow_100m_m3": 30.2565,
+      "generation_10k_kwh": 40896.576,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2010,
+      "rainfall_mm": 2299.8,
+      "inflow_100m_m3": 52.6591,
+      "generation_10k_kwh": 140658.984,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2011,
+      "rainfall_mm": 1341.0,
+      "inflow_100m_m3": 22.16,
+      "generation_10k_kwh": 87673.384,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2012,
+      "rainfall_mm": 2087.1,
+      "inflow_100m_m3": 44.5758,
+      "generation_10k_kwh": 113708.472,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2013,
+      "rainfall_mm": 1863.5,
+      "inflow_100m_m3": 39.2533,
+      "generation_10k_kwh": 113118.64,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2014,
+      "rainfall_mm": 2000.1,
+      "inflow_100m_m3": 44.293,
+      "generation_10k_kwh": 137666.144,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2015,
+      "rainfall_mm": 2138.6,
+      "inflow_100m_m3": 44.5687,
+      "generation_10k_kwh": 121682.408,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2016,
+      "rainfall_mm": 2242.7,
+      "inflow_100m_m3": 52.1648,
+      "generation_10k_kwh": 155347.456,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2017,
+      "rainfall_mm": 1674.4,
+      "inflow_100m_m3": 31.7282,
+      "generation_10k_kwh": 110080.744,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2018,
+      "rainfall_mm": 1576.3,
+      "inflow_100m_m3": 26.1557,
+      "generation_10k_kwh": 72057.728,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2019,
+      "rainfall_mm": 1810.2,
+      "inflow_100m_m3": 41.5838,
+      "generation_10k_kwh": 133844.392,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2020,
+      "rainfall_mm": 1398.2,
+      "inflow_100m_m3": 21.3109,
+      "generation_10k_kwh": 77354.712,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2021,
+      "rainfall_mm": 1855.0,
+      "inflow_100m_m3": 34.2142,
+      "generation_10k_kwh": 84825.08,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2022,
+      "rainfall_mm": 1882.5,
+      "inflow_100m_m3": 40.5796,
+      "generation_10k_kwh": 112062.496,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2023,
+      "rainfall_mm": 1510.9,
+      "inflow_100m_m3": 24.6739,
+      "generation_10k_kwh": 76555.456,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": 2024,
+      "rainfall_mm": 1995.4,
+      "inflow_100m_m3": 43.5677,
+      "generation_10k_kwh": 113442.504,
+      "is_average_row": 0
+    },
+    {
+      "stat_year": null,
+      "rainfall_mm": 1834.8,
+      "inflow_100m_m3": 37.1091,
+      "generation_10k_kwh": 110005.24,
+      "is_average_row": 1
+    }
+  ],
+  "gate_operation_log": [
+    {
+      "event_time": "2016-09-28 16:00:00",
+      "upstream_wl_m": 156.98,
+      "downstream_wl_m": 35.32,
+      "gate_1_opening_m": 2.45,
+      "gate_2_opening_m": null,
+      "gate_3_opening_m": 2.45,
+      "gate_4_opening_m": 2.45,
+      "gate_5_opening_m": null,
+      "gate_6_opening_m": 2.45,
+      "outflow_m3s": 1500,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-28 18:50:00",
+      "upstream_wl_m": 157.92,
+      "downstream_wl_m": 37.22,
+      "gate_1_opening_m": 3.58,
+      "gate_2_opening_m": null,
+      "gate_3_opening_m": 3.58,
+      "gate_4_opening_m": 3.58,
+      "gate_5_opening_m": null,
+      "gate_6_opening_m": 3.58,
+      "outflow_m3s": 2000,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-28 21:30:00",
+      "upstream_wl_m": 158.78,
+      "downstream_wl_m": 38.12,
+      "gate_1_opening_m": 3.58,
+      "gate_2_opening_m": 2.45,
+      "gate_3_opening_m": 3.58,
+      "gate_4_opening_m": 3.58,
+      "gate_5_opening_m": 2.45,
+      "gate_6_opening_m": 3.58,
+      "outflow_m3s": 2500,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-28 22:00:00",
+      "upstream_wl_m": 158.86,
+      "downstream_wl_m": 38.73,
+      "gate_1_opening_m": 3.58,
+      "gate_2_opening_m": 4.7,
+      "gate_3_opening_m": 3.58,
+      "gate_4_opening_m": 3.58,
+      "gate_5_opening_m": 4.7,
+      "gate_6_opening_m": 3.58,
+      "outflow_m3s": 3000,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-28 22:47:00",
+      "upstream_wl_m": 159.05,
+      "downstream_wl_m": 39.2,
+      "gate_1_opening_m": 2.2,
+      "gate_2_opening_m": null,
+      "gate_3_opening_m": null,
+      "gate_4_opening_m": null,
+      "gate_5_opening_m": null,
+      "gate_6_opening_m": 2.2,
+      "outflow_m3s": 1000,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-29 02:30:00",
+      "upstream_wl_m": 159.66,
+      "downstream_wl_m": 36.49,
+      "gate_1_opening_m": 2.2,
+      "gate_2_opening_m": null,
+      "gate_3_opening_m": 2.45,
+      "gate_4_opening_m": 2.45,
+      "gate_5_opening_m": null,
+      "gate_6_opening_m": 2.2,
+      "outflow_m3s": 1500,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-29 04:07:00",
+      "upstream_wl_m": 159.84,
+      "downstream_wl_m": 37.36,
+      "gate_1_opening_m": 3.0,
+      "gate_2_opening_m": null,
+      "gate_3_opening_m": 3.0,
+      "gate_4_opening_m": 3.0,
+      "gate_5_opening_m": null,
+      "gate_6_opening_m": 3.0,
+      "outflow_m3s": 2000,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-29 08:00:00",
+      "upstream_wl_m": 160.35,
+      "downstream_wl_m": 37.77,
+      "gate_1_opening_m": 3.0,
+      "gate_2_opening_m": 2.09,
+      "gate_3_opening_m": 3.0,
+      "gate_4_opening_m": 3.0,
+      "gate_5_opening_m": 2.09,
+      "gate_6_opening_m": 3.0,
+      "outflow_m3s": 2500,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-29 11:15:00",
+      "upstream_wl_m": 160.58,
+      "downstream_wl_m": 38.41,
+      "gate_1_opening_m": 3.0,
+      "gate_2_opening_m": 4.5,
+      "gate_3_opening_m": 3.0,
+      "gate_4_opening_m": 3.0,
+      "gate_5_opening_m": 4.5,
+      "gate_6_opening_m": 3.0,
+      "outflow_m3s": 3000,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-09-30 00:30:00",
+      "upstream_wl_m": 159.93,
+      "downstream_wl_m": 38.83,
+      "gate_1_opening_m": 2.0,
+      "gate_2_opening_m": null,
+      "gate_3_opening_m": 2.0,
+      "gate_4_opening_m": 2.0,
+      "gate_5_opening_m": null,
+      "gate_6_opening_m": 2.0,
+      "outflow_m3s": 1500,
+      "source_event": "2016-09 flood"
+    },
+    {
+      "event_time": "2016-10-01 20:30:00",
+      "upstream_wl_m": 158.07,
+      "downstream_wl_m": 36.81,
+      "gate_1_opening_m": null,
+      "gate_2_opening_m": null,
+      "gate_3_opening_m": null,
+      "gate_4_opening_m": null,
+      "gate_5_opening_m": null,
+      "gate_6_opening_m": null,
+      "outflow_m3s": 540,
+      "source_event": "2016-09 flood"
+    }
+  ],
+  "flood_forecast_stats": [
+    {
+      "flood_no": "2024052720",
+      "start_time": "2024-05-27 05:00:00",
+      "end_time": "2024-05-29 23:00:00",
+      "rainfall_mm": 53.0,
+      "actual_peak_m3s": 1160,
+      "forecast_peak_m3s": 1190,
+      "forecast_accuracy_pct": 97.4,
+      "flood_volume_100m_m3": 1.0539,
+      "highest_wl_m": 154.05
+    },
+    {
+      "flood_no": "2024060202",
+      "start_time": "2024-05-31 14:00:00",
+      "end_time": "2024-06-05 08:00:00",
+      "rainfall_mm": 125.5,
+      "actual_peak_m3s": 2270,
+      "forecast_peak_m3s": 2290,
+      "forecast_accuracy_pct": 99.1,
+      "flood_volume_100m_m3": 3.0207,
+      "highest_wl_m": 156.04
+    },
+    {
+      "flood_no": "2024061623",
+      "start_time": "2024-06-10 02:00:00",
+      "end_time": "2024-06-19 11:00:00",
+      "rainfall_mm": 366.1,
+      "actual_peak_m3s": 3380,
+      "forecast_peak_m3s": 3640,
+      "forecast_accuracy_pct": 92.3,
+      "flood_volume_100m_m3": 12.1054,
+      "highest_wl_m": 159.4
+    },
+    {
+      "flood_no": "2024072617",
+      "start_time": "2024-07-24 11:00:00",
+      "end_time": "2024-07-28 08:00:00",
+      "rainfall_mm": 137.6,
+      "actual_peak_m3s": 1250,
+      "forecast_peak_m3s": 1160,
+      "forecast_accuracy_pct": 92.8,
+      "flood_volume_100m_m3": 1.4529,
+      "highest_wl_m": 151.96
+    }
+  ],
+  "contact_directory": [
+    {
+      "person_name": "钱伟斌",
+      "role_title": "董事长、党总支书记、总经理",
+      "phone_number": "13867308500",
+      "team_type": "防汛领导小组",
+      "remarks": null
+    },
+    {
+      "person_name": "蒋品华",
+      "role_title": "党总支副书记、工会主席",
+      "phone_number": "13968173503",
+      "team_type": "防汛领导小组",
+      "remarks": null
+    },
+    {
+      "person_name": "缪奇",
+      "role_title": "副总经理、党总支委员",
+      "phone_number": "13819516272",
+      "team_type": "防汛领导小组",
+      "remarks": null
+    },
+    {
+      "person_name": "陈荣洲",
+      "role_title": "副总经理、党总支委员",
+      "phone_number": "13732550039",
+      "team_type": "防汛领导小组",
+      "remarks": null
+    },
+    {
+      "person_name": "干建丽",
+      "role_title": "副总工程师",
+      "phone_number": "13588779371",
+      "team_type": "防汛领导小组",
+      "remarks": null
+    },
+    {
+      "person_name": "郭振兴",
+      "role_title": "防汛办主任",
+      "phone_number": "13732550020",
+      "team_type": "防汛办公室",
+      "remarks": null
+    },
+    {
+      "person_name": "王菊芬",
+      "role_title": "专业管理岗（水调专业）",
+      "phone_number": "13732550049",
+      "team_type": "防汛办公室",
+      "remarks": null
+    }
+  ],
+  "engineering_characteristics": [
+    {
+      "category_name": "水文",
+      "item_name": "坝址以上流域面积",
+      "metric_name": "流域面积",
+      "metric_value": "3330",
+      "unit": "km2",
+      "remark": null
+    },
+    {
+      "category_name": "水文",
+      "item_name": "多年平均流量",
+      "metric_name": "多年平均流量",
+      "metric_value": "120",
+      "unit": "m3/s",
+      "remark": null
+    },
+    {
+      "category_name": "水文",
+      "item_name": "年径流量",
+      "metric_name": "年径流量",
+      "metric_value": "37.8",
+      "unit": "亿m3",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "校核洪水位",
+      "metric_name": "校核洪水位（PMF）",
+      "metric_value": "169.15",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "设计洪水位",
+      "metric_name": "设计洪水位（P=0.1%）",
+      "metric_value": "165.87",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "防洪高水位",
+      "metric_name": "防洪高水位（P=5%）",
+      "metric_value": "161.50",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "正常蓄水位",
+      "metric_name": "正常蓄水位",
+      "metric_value": "160.00",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "台汛期限制水位",
+      "metric_name": "台汛期限制水位",
+      "metric_value": "156.50",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "死水位",
+      "metric_name": "死水位",
+      "metric_value": "120.00",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "总库容",
+      "metric_name": "总库容",
+      "metric_value": "41.90",
+      "unit": "亿m3",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "正常库容",
+      "metric_name": "正常库容",
+      "metric_value": "35.20",
+      "unit": "亿m3",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "调节库容",
+      "metric_name": "调节库容",
+      "metric_value": "21.26",
+      "unit": "亿m3",
+      "remark": null
+    },
+    {
+      "category_name": "水库",
+      "item_name": "防洪库容",
+      "metric_name": "防洪库容",
+      "metric_value": "3.50",
+      "unit": "亿m3",
+      "remark": null
+    },
+    {
+      "category_name": "工程效益指标",
+      "item_name": "装机容量",
+      "metric_name": "装机容量",
+      "metric_value": "604",
+      "unit": "MW",
+      "remark": null
+    },
+    {
+      "category_name": "工程效益指标",
+      "item_name": "保证出力",
+      "metric_name": "保证出力(P=90%)",
+      "metric_value": "87.75",
+      "unit": "MW",
+      "remark": null
+    },
+    {
+      "category_name": "工程效益指标",
+      "item_name": "多年平均发电量",
+      "metric_name": "多年平均发电量",
+      "metric_value": "10.23",
+      "unit": "亿kWh",
+      "remark": null
+    },
+    {
+      "category_name": "主要建筑物及设备",
+      "item_name": "坝顶高程",
+      "metric_name": "坝顶高程",
+      "metric_value": "171.0",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "主要建筑物及设备",
+      "item_name": "最大坝高",
+      "metric_name": "最大坝高",
+      "metric_value": "162.0",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "主要建筑物及设备",
+      "item_name": "坝顶长度",
+      "metric_name": "坝顶长度",
+      "metric_value": "507",
+      "unit": "m",
+      "remark": null
+    },
+    {
+      "category_name": "主要建筑物及设备",
+      "item_name": "溢洪道设计泄洪流量",
+      "metric_name": "设计泄洪流量",
+      "metric_value": "11085",
+      "unit": "m3/s",
+      "remark": null
+    },
+    {
+      "category_name": "主要建筑物及设备",
+      "item_name": "溢洪道校核泄洪流量",
+      "metric_name": "校核泄洪流量（PMF）",
+      "metric_value": "14335",
+      "unit": "m3/s",
+      "remark": null
+    },
+    {
+      "category_name": "主要建筑物及设备",
+      "item_name": "泄洪洞设计泄洪流量",
+      "metric_name": "设计泄洪流量",
+      "metric_value": "1699",
+      "unit": "m3/s",
+      "remark": null
+    },
+    {
+      "category_name": "主要建筑物及设备",
+      "item_name": "泄洪洞校核泄洪流量",
+      "metric_name": "校核泄洪流量",
+      "metric_value": "1728",
+      "unit": "m3/s",
+      "remark": null
+    }
+  ]
+}

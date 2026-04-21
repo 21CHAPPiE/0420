@@ -1,0 +1,22 @@
+[project]
+name = "reservoir-qa"
+version = "0.1.0"
+description = "Reservoir ask-data and ask-answer system built with Agno, MySQL, and LanceDB."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "agno",
+  "openai",
+  "sqlalchemy",
+  "pymysql",
+  "cryptography",
+  "lancedb>=0.26.0",
+  "pylance",
+  "tantivy",
+  "pypdf",
+  "aiofiles",
+  "sentence-transformers",
+]
+
+[tool.uv.sources]
+agno = { path = "../agno-main/libs/agno", editable = true }
