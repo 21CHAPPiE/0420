@@ -9,6 +9,9 @@ from agno.vectordb.lancedb import LanceDb, SearchType
 
 from app.core.config import get_config
 
+RAG_MAX_RESULTS = 3
+SQL_SEMANTICS_MAX_RESULTS = 2
+
 
 def build_embedder():
     config = get_config()
@@ -25,6 +28,7 @@ def build_embedder():
 def build_rag_knowledge() -> Knowledge:
     config = get_config()
     return Knowledge(
+        max_results=RAG_MAX_RESULTS,
         vector_db=LanceDb(
             uri=config.lancedb_uri,
             table_name=config.rag_table_name,
@@ -37,6 +41,7 @@ def build_rag_knowledge() -> Knowledge:
 def build_sql_semantics_knowledge() -> Knowledge:
     config = get_config()
     return Knowledge(
+        max_results=SQL_SEMANTICS_MAX_RESULTS,
         vector_db=LanceDb(
             uri=config.lancedb_uri,
             table_name=config.sql_semantics_table_name,

@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-04-23T10:18:13",
+  "question_set_path": "D:\\a_hydro\\0420\\reservoir_qa\\问答问题(1).json",
+  "sample_count": 8,
+  "avg_duration_sec": 15.636,
+  "max_duration_sec": 23.12,
+  "results": [
+    {
+      "index": 1,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "2025年滩坑水库梅汛期、非汛期、台汛期的控制蓄水位分别是多少？",
+      "expected": "梅汛期控制蓄水位160.00m，非汛期控制蓄水位160.00m，台汛期控制蓄水位156.50m。除调洪等特殊情况外，不得超控制蓄水位运行。",
+      "actual": "Unexpected message role.",
+      "error": null,
+      "duration_sec": 18.68
+    },
+    {
+      "index": 2,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站遭遇50年一遇以下洪水时，滩坑水库由谁调度？",
+      "expected": "由丽水市水利局调度。",
+      "actual": "Unexpected message role.",
+      "error": null,
+      "duration_sec": 15.555
+    },
+    {
+      "index": 3,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "梅汛期当161.50m＜Z≤161.70m时，水库按多少流量下泄洪水？",
+      "expected": "按6000m3/s控制流量下泄洪水。",
+      "actual": "Unexpected message role.",
+      "error": null,
+      "duration_sec": 16.303
+    },
+    {
+      "index": 4,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "高水位预警的触发条件是什么？",
+      "expected": "当滩坑水库蓄水位超过土地征用线（坝前水位160.00m），且预报滩坑水库最高水位将达到移民线（坝前水位161.50m）时，触发高水位预警。",
+      "actual": "Unexpected message role.",
+      "error": null,
+      "duration_sec": 15.424
+    },
+    {
+      "index": 5,
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水电站总装机容量是多少？",
+      "expected": "604MW（3×200MW+4MW）。",
+      "actual": "滩坑水电站总装机容量为 604 MW。",
+      "error": null,
+      "duration_sec": 0.0
+    },
+    {
+      "index": 6,
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "滩坑水库梅汛期限制水位是多少？",
+      "expected": "160.00m。",
+      "actual": "Unexpected message role.",
+      "error": null,
+      "duration_sec": 15.971
+    },
+    {
+      "index": 7,
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年计划年降雨量是多少？",
+      "expected": "1560mm。",
+      "actual": "Unexpected message role.",
+      "error": null,
+      "duration_sec": 20.031
+    },
+    {
+      "index": 8,
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "滩坑流域2024年降水量是多少？",
+      "expected": "1995.4mm。",
+      "actual": "Unexpected message role.",
+      "error": null,
+      "duration_sec": 23.12
+    }
+  ]
+}

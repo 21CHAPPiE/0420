@@ -1,6 +1,6 @@
 USE tk_reservoir_ops;
 
--- 修改用户名、密码和主机范围后执行
+-- Update username, password, and host scope before production use.
 CREATE USER IF NOT EXISTS 'app_query_ro'@'%' IDENTIFIED BY 'password';
 
 GRANT SELECT ON tk_reservoir_ops.reservoir_basic_info TO 'app_query_ro'@'%';
@@ -16,5 +16,6 @@ GRANT SELECT ON tk_reservoir_ops.reservoir_gate_operation_log TO 'app_query_ro'@
 GRANT SELECT ON tk_reservoir_ops.reservoir_flood_forecast_stat TO 'app_query_ro'@'%';
 GRANT SELECT ON tk_reservoir_ops.reservoir_contact_directory TO 'app_query_ro'@'%';
 GRANT SELECT ON tk_reservoir_ops.reservoir_engineering_characteristic TO 'app_query_ro'@'%';
+GRANT SELECT ON tk_reservoir_ops.reservoir_event_timeseries TO 'app_query_ro'@'%';
 
 FLUSH PRIVILEGES;

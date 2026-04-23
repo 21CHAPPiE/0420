@@ -1,0 +1,373 @@
+{
+  "summary": {
+    "count": 43,
+    "passed": 43,
+    "failed": 0,
+    "routes": [
+      "local"
+    ],
+    "by_group": {
+      "authority": {
+        "count": 10,
+        "passed": 10,
+        "failed": 0
+      },
+      "plan": {
+        "count": 15,
+        "passed": 15,
+        "failed": 0
+      },
+      "history": {
+        "count": 18,
+        "passed": 18,
+        "failed": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "group": "authority",
+      "question": "青田鹤城水文站遭遇50年一遇以下洪水时，滩坑水库由谁调度？",
+      "expected": "由丽水市水利局调度。",
+      "actual": "由丽水市水利局调度。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "青田鹤城水文站遭遇50年一遇及以上洪水时，滩坑水库由谁调度？",
+      "expected": "由省水利厅调度。",
+      "actual": "由省水利厅调度。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "青田鹤城水文站流量达到13000m3/s及以上时，调度令需同步抄送哪些地方单位？",
+      "expected": "需同时抄送温州市防指、温州市水利局、温州市住建局。",
+      "actual": "需同时抄送温州市防指、温州市水利局、温州市住建局。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "预报将遭遇风暴潮或台风，且高潮位顶托将威胁温州市城区防洪安全时，滩坑水库错峰调度应如何启动？",
+      "expected": "由温州市水利局与丽水市水利局会商，报省水利厅同意后，由丽水市水利局适时实施滩坑水库错峰调度。",
+      "actual": "由温州市水利局与丽水市水利局会商，报省水利厅同意后，由丽水市水利局适时实施滩坑水库错峰调度。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "兴利调度由谁执行？",
+      "expected": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "actual": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "生态流量控制由谁执行？",
+      "expected": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "actual": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "梅汛期库水位不超过160.00m时，调度权归谁？",
+      "expected": "调度权归浙江浙能北海水力发电有限公司。",
+      "actual": "调度权归浙江浙能北海水力发电有限公司。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "梅汛期库水位超过160.00m时，调度权归谁？",
+      "expected": "调度权归丽水市水利局。",
+      "actual": "调度权归丽水市水利局。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "台汛期库水位低于156.50m时，调度权归谁？",
+      "expected": "调度权归浙江浙能北海水力发电有限公司。",
+      "actual": "调度权归浙江浙能北海水力发电有限公司。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "authority",
+      "question": "台汛期库水位超过156.50m时，调度权归谁？",
+      "expected": "调度权归丽水市水利局。",
+      "actual": "调度权归丽水市水利局。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年计划年降雨量是多少？",
+      "expected": "1560mm。",
+      "actual": "1560mm。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年计划年入库水量是多少？",
+      "expected": "32.7亿m³。",
+      "actual": "32.7亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年计划年上游取水量是多少？",
+      "expected": "0.257亿m³。",
+      "actual": "0.257亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年1月计划来水量是多少？",
+      "expected": "0.45亿m³。",
+      "actual": "0.45亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年6月计划来水量是多少？",
+      "expected": "7.8亿m³。",
+      "actual": "7.8亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年7月计划来水量是多少？",
+      "expected": "3.2亿m³。",
+      "actual": "3.2亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年9月计划来水量是多少？",
+      "expected": "3.3亿m³。",
+      "actual": "3.3亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年1月月初水位是多少？",
+      "expected": "150.93m。",
+      "actual": "150.93m。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年6月月末水位是多少？",
+      "expected": "151.61m。",
+      "actual": "151.61m。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年12月月末水位是多少？",
+      "expected": "147.52m。",
+      "actual": "147.52m。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年计划年发电用水量是多少？",
+      "expected": "34.49亿m³。",
+      "actual": "34.49亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年6月计划降雨量是多少？",
+      "expected": "290mm。",
+      "actual": "290mm。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年5月计划降雨量是多少？",
+      "expected": "205mm。",
+      "actual": "205mm。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年10月计划来水量是多少？",
+      "expected": "1.2亿m³。",
+      "actual": "1.2亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "plan",
+      "question": "滩坑水电站2025年11月计划来水量是多少？",
+      "expected": "1.4亿m³。",
+      "actual": "1.4亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "滩坑流域2024年降水量是多少？",
+      "expected": "1995.4mm。",
+      "actual": "1995.4mm。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "滩坑水库2024年入库径流总量是多少？",
+      "expected": "43.5677亿m³。",
+      "actual": "43.5677亿m³。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年滩坑流域共发生几场洪峰流量大于1000m³/s的洪水？",
+      "expected": "4场。",
+      "actual": "4场。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年最大3小时洪峰流量是多少？",
+      "expected": "3380m³/s。",
+      "actual": "3380m³/s。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年最大3小时洪峰出现时间是什么时候？",
+      "expected": "6月16日23时。",
+      "actual": "6月16日23时。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年最小径流是多少？",
+      "expected": "7.7m³/s。",
+      "actual": "7.7m³/s。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年年累计发电量是多少？",
+      "expected": "113442.504万kW·h。",
+      "actual": "113442.504万kW·h。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年年平均耗水率是多少？",
+      "expected": "3.34m³/kW·h。",
+      "actual": "3.34m³/kW·h。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "水库投运以来历史最高库水位是多少？",
+      "expected": "160.61m。",
+      "actual": "160.61m。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "水库投运以来最低库水位是多少？",
+      "expected": "136.82m。",
+      "actual": "136.82m。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年洪水预报统计中，2024061623号洪水的预报精度是多少？",
+      "expected": "92.3%。",
+      "actual": "92.3%。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024061623号洪水的实测洪峰是多少？",
+      "expected": "3380m³/s。",
+      "actual": "3380m³/s。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024060202号洪水的预报洪峰是多少？",
+      "expected": "2290m³/s。",
+      "actual": "2290m³/s。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024061623号洪水的最高水位是多少？",
+      "expected": "159.40m。",
+      "actual": "159.40m。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年6月16日22:30闸门全开到3.00m时，总出库流量是多少？",
+      "expected": "2500m³/s。",
+      "actual": "2500m³/s。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024年6月17日24:00全部关闸时，总出库流量是多少？",
+      "expected": "540m³/s。",
+      "actual": "540m³/s。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024061623号洪水的拦蓄率是多少？",
+      "expected": "30.00%。",
+      "actual": "30.00%。",
+      "route": "local",
+      "ok": true
+    },
+    {
+      "group": "history",
+      "question": "2024060202号洪水的消减洪峰百分比是多少？",
+      "expected": "80.80%。",
+      "actual": "80.80%。",
+      "route": "local",
+      "ok": true
+    }
+  ]
+}

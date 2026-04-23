@@ -1,0 +1,441 @@
+{
+  "question_set_path": "D:\\a_hydro\\0420\\reservoir_qa\\问答问题(1).json",
+  "results_jsonl_path": "D:\\a_hydro\\0420\\reservoir_qa\\data\\eval\\full_eval_results.jsonl",
+  "status": "completed",
+  "started_at": "2026-04-23T09:54:59",
+  "updated_at": "2026-04-23T09:58:08",
+  "question_count": 109,
+  "completed_count": 109,
+  "remaining_count": 0,
+  "pass": 10,
+  "partial": 16,
+  "fail": 83,
+  "avg_duration_sec": 59.225,
+  "max_duration_sec": 374.795,
+  "by_top": {
+    "6.2.2_调度规则与方案依据问答演示": {
+      "pass": 2,
+      "partial": 7,
+      "fail": 37,
+      "total": 46
+    },
+    "问数清单": {
+      "pass": 8,
+      "partial": 9,
+      "fail": 46,
+      "total": 63
+    }
+  },
+  "by_category": {
+    "6.2.2_调度规则与方案依据问答演示 / 调度原则类": {
+      "pass": 0,
+      "partial": 2,
+      "fail": 8,
+      "total": 10
+    },
+    "6.2.2_调度规则与方案依据问答演示 / 调度权限类": {
+      "pass": 0,
+      "partial": 1,
+      "fail": 9,
+      "total": 10
+    },
+    "6.2.2_调度规则与方案依据问答演示 / 操作规则类": {
+      "pass": 1,
+      "partial": 4,
+      "fail": 5,
+      "total": 10
+    },
+    "6.2.2_调度规则与方案依据问答演示 / 应急与预警类": {
+      "pass": 1,
+      "partial": 0,
+      "fail": 15,
+      "total": 16
+    },
+    "问数清单 / 一、工程基础参数类问数（适合测试静态参数问数）": {
+      "pass": 3,
+      "partial": 4,
+      "fail": 8,
+      "total": 15
+    },
+    "问数清单 / 二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）": {
+      "pass": 5,
+      "partial": 2,
+      "fail": 8,
+      "total": 15
+    },
+    "问数清单 / 三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）": {
+      "pass": 0,
+      "partial": 0,
+      "fail": 15,
+      "total": 15
+    },
+    "问数清单 / 四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）": {
+      "pass": 0,
+      "partial": 3,
+      "fail": 15,
+      "total": 18
+    }
+  },
+  "examples": [
+    {
+      "index": 1,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "2025年滩坑水库梅汛期、非汛期、台汛期的控制蓄水位分别是多少？",
+      "expected": "梅汛期控制蓄水位160.00m，非汛期控制蓄水位160.00m，台汛期控制蓄水位156.50m。除调洪等特殊情况外，不得超控制蓄水位运行。",
+      "actual": "2025年滩坑水库梅汛期、非汛期、台汛期的控制蓄水位分别是156.5m、160.0m和161.5m。",
+      "verdict": "partial",
+      "metrics": {
+        "ratio": 0.353,
+        "numbers_hit": true,
+        "chunk_hit_count": 0,
+        "chunk_total": 5,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 25.642,
+      "finished_at": "2026-04-22T15:56:37"
+    },
+    {
+      "index": 2,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "2025年梅台过渡期库水位控制要求是什么？",
+      "expected": "梅台过渡期应逐步降低库水位；接省、市气象部门预报有台风、暴雨影响时，必须及时将库水位降至156.50m。",
+      "actual": "2025年梅台过渡期库水位控制要求是：\\u6885\\u6c5b\\u671f\\u9650\\u5236\\u6c34\\u4f4d\\u4e3a160.00m\\uff0c\\u53f0\\u6c5b\\u671f\\u9650\\u5236\\u6c34\\u4f4d\\u4e3a156.50m",
+      "verdict": "partial",
+      "metrics": {
+        "ratio": 0.16,
+        "numbers_hit": true,
+        "chunk_hit_count": 0,
+        "chunk_total": 4,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 38.405,
+      "finished_at": "2026-04-22T15:57:15"
+    },
+    {
+      "index": 3,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "预报有大暴雨或洪水，且研判库水位将超过控制蓄水位时，水库应采取什么调度措施？",
+      "expected": "应通过预泄适当降低库水位。",
+      "actual": "根据预报有大暴雨或洪水，且研判库水位将超过控制蓄水位时，水库应采取以下调度措施：\n\n1.  当水库水位超过控制蓄水位时，应立即启动应急调度，通过泄洪或其他措施降低水位，确保水库的安全运行。\n2.  在应急调度过程中，应密切监测水库水位、水量和下游水情，及时调整调度措施，确保水库的安全和下游的防洪安全。\n3.  如果水库水位继续上涨，应按照规定的调度规则和程序进行调度，确保水库的安全和下游的防洪安全。\n4.  在调度过程中，应保持与相关部门和单位的沟通和协调，确保调度措施的有效实施和安全性。\n\n总之，预报有大暴雨或洪水，且研判库水位将超过控制蓄水位时，水库应采取紧急调度措施，确保水库的安全运行和下游的防洪安全。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.033,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 117.248,
+      "finished_at": "2026-04-22T15:59:12"
+    },
+    {
+      "index": 4,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "汛期库水位处于控制蓄水位至161.50m之间时，滩坑水库按什么规则调度？",
+      "expected": "与瓯江干流洪水实行错峰调度，下泄控制鹤城站流量不超过14000m3/s。",
+      "actual": "# 1. 汛期库水位处于控制蓄水位至161.50m之间时，滩坑水库按什么规则调度？  \n1.1. 当水位在156.5m至161.5m之间时，按照正常调度规则进行调度。  \n1.2. 当水位在160.0m至161.5m之间时，按照正常调度规则进行调度。  \n1.3. 当水位在161.5m至161.7m之间时，按照6000m3/s的流量进行调度。  \n1.4. 当水位大于161.7m时，开启泄洪闸全开，机组参与泄洪，发电机组停止发电。  \n1.5. 当水位大于165.27m时，开启泄洪闸全开，机组参与泄洪，发电机组停止发电。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.065,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 2,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 110.149,
+      "finished_at": "2026-04-22T16:01:03"
+    },
+    {
+      "index": 5,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "预报滩坑坝址至鹤城站区间洪水将达到或超过14000m3/s时，水库应如何调度？",
+      "expected": "水库关闸。",
+      "actual": "预报滩坑坝址至鹤城站区间洪水将达到或超过14000m3/s时，水库应按照《水库调度规定》的要求进行调度。具体调度方案如下：\n\n1. 当预报滩坑坝址至鹤城站区间洪水将达到或超过14000m3/s时，水库应立即启动洪水调度方案。\n2. 水库应按照《水库调度规定》的要求，根据预报洪水量和水库当前水位，确定调度方案。\n3. 水库应按照调度方案，进行洪水调度，确保水库安全和下游安全。\n4. 水库应实时监测洪水情况，并根据实际情况调整调度方案。\n5. 水库应按照《水库调度规定》的要求，进行洪水调度报告和记录。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 61.483,
+      "finished_at": "2026-04-22T16:02:04"
+    },
+    {
+      "index": 6,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "库水位超过161.50m后，水库应如何调度？",
+      "expected": "应逐渐开启溢洪道闸门直至全开。",
+      "actual": "根据检索到的文档内容，水库水位超过161.50m后，水库应按照以下调度规则进行调度：\n\n1.  当水位达到161.50m时，应按照6泄-12m×14m、闸底高程148.0m的泄洪闸开启泄洪。\n2.  当水位达到162.84m（P=2%）时，应按照1泄-7m×7m、闸底高程65.0m的泄洪闸开启泄洪，并且水库下泄洪流量不应超过8630m3/s。\n3.  当水位达到163.54m（P=1%）时，应按照1泄-7m×7m、闸底高程65.0m的泄洪闸开启泄洪，并且水库下泄洪流量不应超过9270m3/s。\n4.  当水位达到164.30m（P=0.5%）时，应按照1泄-7m×7m、闸底高程65.0m的泄洪闸开启泄洪，并且水库下泄洪流量不应超过9970m3/s。\n5.  当水位达到165.27m（P=0.2%）时，应按照1泄-7m×7m、闸底高程65.0m的泄洪闸开启泄洪，并且水库下泄洪流量不应超过10900m3/s。\n6.  当水位超过165.27m（P=0.2%）时，应按照1泄-7m×7m、闸底高程65.0m的泄洪闸开启泄洪，并且水库下泄洪流量不应超过14300m3/s。\n\n这些调度规则旨在确保水库的安全运行和下游地区的防洪安全。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.004,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 133.775,
+      "finished_at": "2026-04-22T16:04:18"
+    },
+    {
+      "index": 7,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "库水位超过165.27m后，水库应如何调度？",
+      "expected": "溢洪道闸门全开，并开启泄洪洞闸门参与泄洪，发电暂停。",
+      "actual": "库水位超过165.27m后，水库应按照以下调度规则进行调度：\n\n1.  当水位在161.50m至162.84m（P=2%）之间时，按照规定的调度规则进行调度。\n2.  当水位在162.84m至163.54m（P=1%）之间时，按照规定的调度规则进行调度。\n3.  当水位在163.54m至164.30m（P=0.5%）之间时，按照规定的调度规则进行调度。\n4.  当水位在164.30m至165.27m（P=0.2%）之间时，按照规定的调度规则进行调度。\n5.  当水位超过165.27m（P=0.2%）时，按照规定的调度规则进行调度，并开启泄洪闸和发电机，确保水库的安全运行。\n\n这些调度规则旨在确保水库的安全运行和有效利用水资源。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.055,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 3,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 97.631,
+      "finished_at": "2026-04-22T16:05:55"
+    },
+    {
+      "index": 8,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "非汛期发生洪水时，滩坑水库按什么原则调度？",
+      "expected": "参照汛期洪水调度原则执行。",
+      "actual": "非汛期发生洪水时，滩坑水库按以下原则调度：\n\n1. 当水库水位低于正常水位（160.00m）时，按照正常调度原则进行调度。\n2. 当水库水位高于正常水位（160.00m）但低于警戒水位（161.50m）时，按照警戒调度原则进行调度。\n3. 当水库水位高于警戒水位（161.50m）但低于汛限水位（162.84m）时，按照汛限调度原则进行调度。\n4. 当水库水位高于汛限水位（162.84m）但低于保证水位（163.54m）时，按照保证调度原则进行调度。\n5. 当水库水位高于保证水位（163.54m）时，按照超保证调度原则进行调度。\n\n这些原则的具体内容可以参考《滩坑水库调度方案》的相关章节。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.007,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 234.455,
+      "finished_at": "2026-04-22T16:09:50"
+    },
+    {
+      "index": 9,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "兴利调度的基本要求是什么？",
+      "expected": "统筹做好发电等调度工作，充分发挥水库兴利功能。",
+      "actual": "The final answer to the user's question \"What are the basic requirements for the operation of the reservoir?\" is:\n\nThe basic requirements for the operation of the reservoir include:\n\n1. Ensuring the safety of the reservoir and its surrounding environment.\n2. Maintaining the reservoir's water level within the specified range.\n3. Ensuring the proper functioning of the reservoir's hydroelectric power generation facilities.\n4. Managing the reservoir's water resources in a way that balances the needs of various stakeholders, including power generation, irrigation, and flood control.\n5. Implementing measures to prevent or mitigate the impacts of extreme weather events, such as floods and droughts.\n6. Ensuring compliance with relevant laws, regulations, and standards related to reservoir operation and management.\n7. Maintaining accurate records and data related to reservoir operation and management.\n8. Conducting regular inspections and maintenance of the reservoir's facilities and equipment.\n\nThese requirements are based on the content of the provided text, which includes information on the reservoir's design and operation, as well as relevant laws and regulations.",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.002,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 2,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 342.311,
+      "finished_at": "2026-04-22T16:15:32"
+    },
+    {
+      "index": 10,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "生态流量控制按什么规则执行？",
+      "expected": "按照生态流量有关规定执行。",
+      "actual": "生态流量控制按以下规则执行：\n\n1.  **春汛期**：156.5m < Z <= 161.5m 时，按蓄滞发电方式控制。\n2.  **夏汛期和枯水期**：160.0m < Z <= 161.5m 时，按蓄滞发电方式控制。\n3.  161.5m < Z <= 161.7m 时，按6000m3/s控制下泄流量。\n4.  Z > 161.7m 时，泄洪闸全开，机组参与泄洪。\n5.  Z > 165.27m 时，开启泄洪闸参与泄洪，启动发电机组。\n\n这些规则旨在平衡发电和生态保护的需求，确保水库的安全运行和下游生态环境的保护。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.059,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 41.07,
+      "finished_at": "2026-04-22T16:16:13"
+    },
+    {
+      "index": 11,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站遭遇50年一遇以下洪水时，滩坑水库由谁调度？",
+      "expected": "由丽水市水利局调度。",
+      "actual": "根据检索到的文档内容，青田鹤城水文站遭遇50年一遇以下洪水时，滩坑水库由水利部调度。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.231,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 35.235,
+      "finished_at": "2026-04-22T16:16:49"
+    },
+    {
+      "index": 12,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站遭遇50年一遇及以上洪水时，滩坑水库由谁调度？",
+      "expected": "由省水利厅调度。",
+      "actual": "青田鹤城水文站遭遇50年一遇及以上洪水时，滩坑水库由国网浙江省电力有限公司调度。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.208,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 94.981,
+      "finished_at": "2026-04-22T16:18:24"
+    },
+    {
+      "index": 13,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站流量达到13000m3/s及以上时，调度令需同步抄送哪些地方单位？",
+      "expected": "需同时抄送温州市防指、温州市水利局、温州市住建局。",
+      "actual": "根据检索到的文档内容，青田鹤城水文站流量达到13000m3/s及以上时，调度令需同步抄送以下地方单位：水利厅、省水利厅、市水利局、县水利局、水电局、水利局、水利厅、省水利厅、市水利局、县水利局、水电局、水利局。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.2,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 3,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 36.729,
+      "finished_at": "2026-04-22T16:19:00"
+    },
+    {
+      "index": 14,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "预报将遭遇风暴潮或台风，且高潮位顶托将威胁温州市城区防洪安全时，滩坑水库错峰调度应如何启动？",
+      "expected": "由温州市水利局与丽水市水利局会商，报省水利厅同意后，由丽水市水利局适时实施滩坑水库错峰调度。",
+      "actual": "When the forecast indicates that the reservoir will encounter a storm surge or typhoon, and the high tide level will threaten the flood control safety of the Wenzhou urban area, the Tankeng Reservoir should start the peak regulation in advance. The reservoir should be operated according to the flood control regulations, and the water level should be controlled below the warning level. If the water level exceeds the warning level, the reservoir should be operated according to the flood control regulations, and the water level should be controlled below the warning level. If the water level exceeds the warning level, the reservoir should be operated according to the flood control regulations, and the water level should be controlled below the warning level.",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.009,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 3,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 31.242,
+      "finished_at": "2026-04-22T16:19:31"
+    },
+    {
+      "index": 15,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "兴利调度由谁执行？",
+      "expected": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "actual": "兴利调度由水利部执行。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.312,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 35.629,
+      "finished_at": "2026-04-22T16:20:07"
+    },
+    {
+      "index": 16,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "生态流量控制由谁执行？",
+      "expected": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "actual": "生态流量控制由水库文档问答助手执行。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.256,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 61.958,
+      "finished_at": "2026-04-22T16:21:09"
+    },
+    {
+      "index": 17,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "梅汛期库水位不超过160.00m时，调度权归谁？",
+      "expected": "调度权归浙江浙能北海水力发电有限公司。",
+      "actual": "梅汛期库水位不超过160.00m时，调度权归水利部。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.267,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 40.012,
+      "finished_at": "2026-04-22T16:21:49"
+    },
+    {
+      "index": 18,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "梅汛期库水位超过160.00m时，调度权归谁？",
+      "expected": "调度权归丽水市水利局。",
+      "actual": "梅汛期库水位超过160.00m时，调度权归水利电力五公司。",
+      "verdict": "partial",
+      "metrics": {
+        "ratio": 0.35,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 45.57,
+      "finished_at": "2026-04-22T16:22:35"
+    },
+    {
+      "index": 19,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "台汛期库水位低于156.50m时，调度权归谁？",
+      "expected": "调度权归浙江浙能北海水力发电有限公司。",
+      "actual": "台汛期库水位低于156.50m时，调度权归水利部。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.273,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 35.438,
+      "finished_at": "2026-04-22T16:23:10"
+    },
+    {
+      "index": 20,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "台汛期库水位超过156.50m时，调度权归谁？",
+      "expected": "调度权归丽水市水利局。",
+      "actual": "根据检索到的文档内容，台汛期库水位超过156.50m时，调度权归水利部。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.298,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 29.784,
+      "finished_at": "2026-04-22T16:23:40"
+    }
+  ]
+}

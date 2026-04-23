@@ -24,4 +24,11 @@ def build_openai_model() -> OpenAIChat:
         id=config.model_id,
         api_key=config.openai_api_key,
         base_url=config.openai_base_url,
+        role_map={
+            "system": "system",
+            "user": "user",
+            "assistant": "assistant",
+            "tool": "tool",
+            "model": "assistant",
+        },
     )

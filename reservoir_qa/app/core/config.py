@@ -57,6 +57,7 @@ class AppConfig:
     pdf_path: Path
     parsed_text_path: Path
     parsed_json_path: Path
+    merged_event_csv_path: Path
     rag_docs_dir: Path
     lancedb_uri: str
     rag_table_name: str
@@ -99,6 +100,7 @@ def get_config() -> AppConfig:
         pdf_path=raw_dir / "tankeng_2025_plan.pdf",
         parsed_text_path=parsed_dir / "tankeng_2025_plan.txt",
         parsed_json_path=parsed_dir / "tankeng_2025_plan.json",
+        merged_event_csv_path=project_root / "CSV(1)" / "CSV" / "merged_all_en.csv",
         rag_docs_dir=rag_docs_dir,
         lancedb_uri=os.getenv("LANCEDB_URI", str(project_root / "data" / "lancedb")),
         rag_table_name=os.getenv("RAG_TABLE_NAME", "tankeng_rag"),

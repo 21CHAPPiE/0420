@@ -1,0 +1,2409 @@
+{
+  "created_at": "2026-04-23T17:10:22",
+  "seed": 20260423,
+  "per_category": 10,
+  "event_samples": 20,
+  "summary": {
+    "sample_count": 100,
+    "pass": 100,
+    "partial": 0,
+    "fail": 0,
+    "avg_duration_sec": 0.003,
+    "max_duration_sec": 0.044,
+    "by_source": {
+      "event_timeseries": {
+        "pass": 20,
+        "partial": 0,
+        "fail": 0,
+        "total": 20
+      },
+      "question_bank": {
+        "pass": 80,
+        "partial": 0,
+        "fail": 0,
+        "total": 80
+      }
+    },
+    "by_category": {
+      "reservoir_event_timeseries / event_outflow": {
+        "pass": 14,
+        "partial": 0,
+        "fail": 0,
+        "total": 14
+      },
+      "问数清单 / 三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      },
+      "问数清单 / 四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      },
+      "reservoir_event_timeseries / event_inflow": {
+        "pass": 6,
+        "partial": 0,
+        "fail": 0,
+        "total": 6
+      },
+      "问数清单 / 一、工程基础参数类问数（适合测试静态参数问数）": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      },
+      "6.2.2_调度规则与方案依据问答演示 / 应急与预警类": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      },
+      "6.2.2_调度规则与方案依据问答演示 / 操作规则类": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      },
+      "问数清单 / 二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      },
+      "6.2.2_调度规则与方案依据问答演示 / 调度原则类": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      },
+      "6.2.2_调度规则与方案依据问答演示 / 调度权限类": {
+        "pass": 10,
+        "partial": 0,
+        "fail": 0,
+        "total": 10
+      }
+    }
+  },
+  "results": [
+    {
+      "index": 1,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2024060202事件在2024-06-02 11:00的出流量是多少？",
+      "expected": "231.3m3/s。",
+      "actual": "231.3m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"231.3m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-32a8e6774caa\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "231.3",
+          "3"
+        ],
+        "actual_numbers": [
+          "231.3",
+          "3"
+        ]
+      },
+      "duration_sec": 0.025,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 2,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2012030714事件在2012-03-08 02:00的出流量是多少？",
+      "expected": "370.027m3/s。",
+      "actual": "370.027m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"370.027m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-5b5882e3fe40\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "370.027"
+        ],
+        "actual_numbers": [
+          "3",
+          "370.027"
+        ]
+      },
+      "duration_sec": 0.009,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 3,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年9月计划来水量是多少？",
+      "expected": "3.3亿m³。",
+      "actual": "3.3亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"3.3亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-f1d5db65a767\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "3.3"
+        ],
+        "actual_numbers": [
+          "3",
+          "3.3"
+        ]
+      },
+      "duration_sec": 0.001,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 4,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年6月17日24:00全部关闸时，总出库流量是多少？",
+      "expected": "540m³/s。",
+      "actual": "540m³/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"540m³/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-543799cc0466\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "540"
+        ],
+        "actual_numbers": [
+          "3",
+          "540"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 5,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_inflow",
+      "question": "2012030714事件在2012-03-10 11:00的入流量是多少？",
+      "expected": "381.011m3/s。",
+      "actual": "381.011m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"381.011m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-bdd59166210d\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "381.011"
+        ],
+        "actual_numbers": [
+          "3",
+          "381.011"
+        ]
+      },
+      "duration_sec": 0.009,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 6,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库调节库容是多少？",
+      "expected": "21.26亿m³。",
+      "actual": "21.26亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"21.26亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-025efd239bab\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "21.26",
+          "3"
+        ],
+        "actual_numbers": [
+          "21.26",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 7,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "在“通讯孤岛”情况下，当164.30m＜库水位≤165.27m且中断前未收到调度指令时，水库如何调度？",
+      "expected": "根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过10900m3/s控制。",
+      "actual": "根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过10900m3/s控制。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过10900m3/s控制。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-f6030ee2f250\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "10900",
+          "3"
+        ],
+        "actual_numbers": [
+          "10900",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 8,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库总库容是多少？",
+      "expected": "41.9亿m³。",
+      "actual": "41.9亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"41.9亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-9a5b9b799765\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "41.9"
+        ],
+        "actual_numbers": [
+          "3",
+          "41.9"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 9,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "梅汛期当161.50m＜Z≤161.70m时，水库按多少流量下泄洪水？",
+      "expected": "按6000m3/s控制流量下泄洪水。",
+      "actual": "按6000m3/s控制流量下泄洪水。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"按6000m3/s控制流量下泄洪水。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-620866ed5f6d\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "6000"
+        ],
+        "actual_numbers": [
+          "3",
+          "6000"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 10,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "当滩坑机组不发电时，生态供水钢管如何运行？",
+      "expected": "当滩坑机组不发电时，开启生态供水管，确保下游生态流量。",
+      "actual": "当滩坑机组不发电时，开启生态供水管，确保下游生态流量。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"当滩坑机组不发电时，开启生态供水管，确保下游生态流量。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-271956aa81de\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 11,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "水位148m对应的库容是多少？",
+      "expected": "27.53亿m³。",
+      "actual": "27.53亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"27.53亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-e61fb9180652\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "27.53",
+          "3"
+        ],
+        "actual_numbers": [
+          "27.53",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 12,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库设计洪水位是多少？",
+      "expected": "165.87m。",
+      "actual": "165.87m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"165.87m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-85486ad94ea8\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "165.87"
+        ],
+        "actual_numbers": [
+          "165.87"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 13,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "发出高水位预警后，需要提前做好哪些工作？",
+      "expected": "提前发布风险预警，做好危险区人员转移、堤防巡防查险及抢险救援准备工作。",
+      "actual": "提前发布风险预警，做好危险区人员转移、堤防巡防查险及抢险救援准备工作。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"提前发布风险预警，做好危险区人员转移、堤防巡防查险及抢险救援准备工作。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-3817c92603cf\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 14,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库防洪库容是多少？",
+      "expected": "3.5亿m³。",
+      "actual": "3.5亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"3.5亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-455f90a4dcd9\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "3.5"
+        ],
+        "actual_numbers": [
+          "3",
+          "3.5"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 15,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_inflow",
+      "question": "2018060608事件在2018-06-06 02:00的入流量是多少？",
+      "expected": "1338.7m3/s。",
+      "actual": "1338.7m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"1338.7m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-8e3b8b2e1285\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1338.7",
+          "3"
+        ],
+        "actual_numbers": [
+          "1338.7",
+          "3"
+        ]
+      },
+      "duration_sec": 0.009,
+      "finished_at": "2026-04-23T17:10:21"
+    },
+    {
+      "index": 16,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "水位150m对应的库容是多少？",
+      "expected": "28.72亿m³。",
+      "actual": "28.72亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"28.72亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-885ae5945035\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "28.72",
+          "3"
+        ],
+        "actual_numbers": [
+          "28.72",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 17,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_inflow",
+      "question": "2015080908事件在2026-08-09 20:00的入流量是多少？",
+      "expected": "2916.1m3/s。",
+      "actual": "2916.1m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"2916.1m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-ceb569b34730\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "2916.1",
+          "3"
+        ],
+        "actual_numbers": [
+          "2916.1",
+          "3"
+        ]
+      },
+      "duration_sec": 0.009,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 18,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "水库投运以来最低库水位是多少？",
+      "expected": "136.82m。",
+      "actual": "136.82m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"136.82m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-8286d566409f\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "136.82"
+        ],
+        "actual_numbers": [
+          "136.82"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 19,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "兴利调度的基本要求是什么？",
+      "expected": "统筹做好发电等调度工作，充分发挥水库兴利功能。",
+      "actual": "统筹做好发电等调度工作，充分发挥水库兴利功能。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"统筹做好发电等调度工作，充分发挥水库兴利功能。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-8756333aa331\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 20,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "滩坑水库台汛期限制水位是多少？",
+      "expected": "156.50m。",
+      "actual": "156.50m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"156.50m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-239f4ba0f386\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "156.5"
+        ],
+        "actual_numbers": [
+          "156.5"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 21,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "库水位超过161.50m后，水库应如何调度？",
+      "expected": "应逐渐开启溢洪道闸门直至全开。",
+      "actual": "应逐渐开启溢洪道闸门直至全开。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"应逐渐开启溢洪道闸门直至全开。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-b4c75f3f8b86\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 22,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2013121702事件在2013-12-17 08:00的出流量是多少？",
+      "expected": "8.1m3/s。",
+      "actual": "8.1m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"8.1m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-2b1381b5d37b\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "8.1"
+        ],
+        "actual_numbers": [
+          "3",
+          "8.1"
+        ]
+      },
+      "duration_sec": 0.022,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 23,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "库水位在控制蓄水位到161.50m之间时，错峰调度下泄控制鹤城站流量不超过多少？",
+      "expected": "14000m³/s。",
+      "actual": "14000m³/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"14000m³/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-e56ce542f277\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "14000",
+          "3"
+        ],
+        "actual_numbers": [
+          "14000",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 24,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年最小径流是多少？",
+      "expected": "7.7m³/s。",
+      "actual": "7.7m³/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"7.7m³/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-75f0c7c0040d\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "7.7"
+        ],
+        "actual_numbers": [
+          "3",
+          "7.7"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 25,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "在“通讯孤岛”情况下，当库水位大于165.27m且中断前未收到调度指令时，水库如何调度？",
+      "expected": "溢洪道闸门全部打开下泄洪水，并开启泄洪洞参与泄洪，发电暂停，不再控制下泄流量，确保大坝安全。",
+      "actual": "溢洪道闸门全部打开下泄洪水，并开启泄洪洞参与泄洪，发电暂停，不再控制下泄流量，确保大坝安全。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"溢洪道闸门全部打开下泄洪水，并开启泄洪洞参与泄洪，发电暂停，不再控制下泄流量，确保大坝安全。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-e86ad2c7b073\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 26,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "库水位超过165.27m后，水库应如何调度？",
+      "expected": "溢洪道闸门全开，并开启泄洪洞闸门参与泄洪，发电暂停。",
+      "actual": "溢洪道闸门全开，并开启泄洪洞闸门参与泄洪，发电暂停。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"溢洪道闸门全开，并开启泄洪洞闸门参与泄洪，发电暂停。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-47b3325ac5b3\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 27,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2015122414事件在2015-12-23 08:00的出流量是多少？",
+      "expected": "68.9m3/s。",
+      "actual": "68.9m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"68.9m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-608c1b9da2ff\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "68.9"
+        ],
+        "actual_numbers": [
+          "3",
+          "68.9"
+        ]
+      },
+      "duration_sec": 0.027,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 28,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2021052114事件在2021-05-24 20:00的出流量是多少？",
+      "expected": "369.1m3/s。",
+      "actual": "369.1m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"369.1m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-67890a011106\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "369.1"
+        ],
+        "actual_numbers": [
+          "3",
+          "369.1"
+        ]
+      },
+      "duration_sec": 0.009,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 29,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年6月计划降雨量是多少？",
+      "expected": "290mm。",
+      "actual": "290mm。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"290mm。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-f1fcc7a99d69\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "290"
+        ],
+        "actual_numbers": [
+          "290"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 30,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2018053117事件在2018-06-01 17:00的出流量是多少？",
+      "expected": "4m3/s。",
+      "actual": "4m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"4m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-493ab7b56b33\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "4"
+        ],
+        "actual_numbers": [
+          "3",
+          "4"
+        ]
+      },
+      "duration_sec": 0.01,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 31,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年1月计划来水量是多少？",
+      "expected": "0.45亿m³。",
+      "actual": "0.45亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"0.45亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-363ce8c96e20\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "0.45",
+          "3"
+        ],
+        "actual_numbers": [
+          "0.45",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 32,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "溢洪道闸门的关闭顺序是什么？",
+      "expected": "关闭顺序为：#5→#2→#4→#3→#6→#1。",
+      "actual": "关闭顺序为：#5→#2→#4→#3→#6→#1。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"关闭顺序为：#5→#2→#4→#3→#6→#1。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-c04ba5d89749\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "actual_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 33,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024061623号洪水的实测洪峰是多少？",
+      "expected": "3380m³/s。",
+      "actual": "3380m³/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"3380m³/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-422317b758b2\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "3380"
+        ],
+        "actual_numbers": [
+          "3",
+          "3380"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 34,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站遭遇50年一遇以下洪水时，滩坑水库由谁调度？",
+      "expected": "由丽水市水利局调度。",
+      "actual": "由丽水市水利局调度。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"由丽水市水利局调度。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-d704c9506a8a\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 35,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "预报将遭遇风暴潮或台风，且高潮位顶托将威胁温州市城区防洪安全时，滩坑水库错峰调度应如何启动？",
+      "expected": "由温州市水利局与丽水市水利局会商，报省水利厅同意后，由丽水市水利局适时实施滩坑水库错峰调度。",
+      "actual": "由温州市水利局与丽水市水利局会商，报省水利厅同意后，由丽水市水利局适时实施滩坑水库错峰调度。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"由温州市水利局与丽水市水利局会商，报省水利厅同意后，由丽水市水利局适时实施滩坑水库错峰调度。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-b613276a2d7c\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 36,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024061623号洪水的最高水位是多少？",
+      "expected": "159.40m。",
+      "actual": "159.40m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"159.40m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-a49b90a95d7c\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "159.4"
+        ],
+        "actual_numbers": [
+          "159.4"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 37,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站遭遇50年一遇及以上洪水时，滩坑水库由谁调度？",
+      "expected": "由省水利厅调度。",
+      "actual": "由省水利厅调度。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"由省水利厅调度。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-9f814fb85e2d\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 38,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "泄洪洞在什么情况下参与泄洪？",
+      "expected": "当库水位大于165.27m时，泄洪洞参与泄洪。",
+      "actual": "当库水位大于165.27m时，泄洪洞参与泄洪。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"当库水位大于165.27m时，泄洪洞参与泄洪。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-373813007619\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "165.27"
+        ],
+        "actual_numbers": [
+          "165.27"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 39,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "当滩坑机组发电时，生态供水钢管如何运行？",
+      "expected": "当滩坑机组发电时，生态供水钢管关闭。",
+      "actual": "当滩坑机组发电时，生态供水钢管关闭。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"当滩坑机组发电时，生态供水钢管关闭。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-287bda0c491f\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 40,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "泄洪洞除参与泄洪外还有什么功能？",
+      "expected": "泄洪洞兼作放空水库之用。",
+      "actual": "泄洪洞兼作放空水库之用。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"泄洪洞兼作放空水库之用。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-0b34df6e67dd\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 41,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "2025年梅台过渡期库水位控制要求是什么？",
+      "expected": "梅台过渡期应逐步降低库水位；接省、市气象部门预报有台风、暴雨影响时，必须及时将库水位降至156.50m。",
+      "actual": "梅台过渡期应逐步降低库水位；接省、市气象部门预报有台风、暴雨影响时，必须及时将库水位降至156.50m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"梅台过渡期应逐步降低库水位；接省、市气象部门预报有台风、暴雨影响时，必须及时将库水位降至156.50m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-e24978598b2b\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "156.5"
+        ],
+        "actual_numbers": [
+          "156.5"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 42,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年6月16日22:30闸门全开到3.00m时，总出库流量是多少？",
+      "expected": "2500m³/s。",
+      "actual": "2500m³/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"2500m³/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-cf559cc31faf\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "2500",
+          "3"
+        ],
+        "actual_numbers": [
+          "2500",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 43,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "非汛期发生洪水时，滩坑水库按什么原则调度？",
+      "expected": "参照汛期洪水调度原则执行。",
+      "actual": "参照汛期洪水调度原则执行。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"参照汛期洪水调度原则执行。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-f28d259b4cc9\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 44,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑溢洪道最大泄流量是多少？",
+      "expected": "14335m³/s。",
+      "actual": "14335m³/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"14335m³/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-817e6ae33ecd\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "14335",
+          "3"
+        ],
+        "actual_numbers": [
+          "14335",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 45,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "预报有大暴雨或洪水，且研判库水位将超过控制蓄水位时，水库应采取什么调度措施？",
+      "expected": "应通过预泄适当降低库水位。",
+      "actual": "应通过预泄适当降低库水位。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"应通过预泄适当降低库水位。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-ac0c88a10171\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 46,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "梅台过渡期接到台风、暴雨预报时，应将库水位降至多少？",
+      "expected": "156.50m。",
+      "actual": "156.50m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"156.50m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-eddaf8f553ed\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "156.5"
+        ],
+        "actual_numbers": [
+          "156.5"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 47,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "梅汛期库水位超过160.00m时，调度权归谁？",
+      "expected": "调度权归丽水市水利局。",
+      "actual": "调度权归丽水市水利局。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"调度权归丽水市水利局。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-7a5897527fc2\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 48,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "在“通讯孤岛”情况下，当162.84m＜库水位≤163.54m且中断前未收到调度指令时，水库如何调度？",
+      "expected": "根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过9270m3/s控制。",
+      "actual": "根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过9270m3/s控制。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过9270m3/s控制。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-61cd3f67d90a\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "9270"
+        ],
+        "actual_numbers": [
+          "3",
+          "9270"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 49,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "滩坑水库2024年入库径流总量是多少？",
+      "expected": "43.5677亿m³。",
+      "actual": "43.5677亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"43.5677亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-4e97adbe8770\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "43.5677"
+        ],
+        "actual_numbers": [
+          "3",
+          "43.5677"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 50,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年5月计划降雨量是多少？",
+      "expected": "205mm。",
+      "actual": "205mm。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"205mm。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-24660621a5ed\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "205"
+        ],
+        "actual_numbers": [
+          "205"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 51,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2012062402事件在2012-06-25 11:00的出流量是多少？",
+      "expected": "529.5m3/s。",
+      "actual": "529.5m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"529.5m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-516755b72081\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "529.5"
+        ],
+        "actual_numbers": [
+          "3",
+          "529.5"
+        ]
+      },
+      "duration_sec": 0.011,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 52,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水电站总装机容量是多少？",
+      "expected": "604MW（3×200MW+4MW）。",
+      "actual": "604MW（3×200MW+4MW）。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"604MW（3×200MW+4MW）。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-40e4da557573\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "200",
+          "3",
+          "4",
+          "604"
+        ],
+        "actual_numbers": [
+          "200",
+          "3",
+          "4",
+          "604"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 53,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库坝址以上流域面积是多少？",
+      "expected": "3330km²。",
+      "actual": "3330km²。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"3330km²。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-d55766256815\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "2",
+          "3330"
+        ],
+        "actual_numbers": [
+          "2",
+          "3330"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 54,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "当库水位超过165.27m时，应如何运行？",
+      "expected": "溢洪道闸门全开，并开启泄洪洞闸门参与泄洪，发电暂停。",
+      "actual": "溢洪道闸门全开，并开启泄洪洞闸门参与泄洪，发电暂停。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"溢洪道闸门全开，并开启泄洪洞闸门参与泄洪，发电暂停。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-e8a19475274b\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 55,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_inflow",
+      "question": "2012030714事件在2012-03-07 11:00的入流量是多少？",
+      "expected": "1282.505m3/s。",
+      "actual": "1282.505m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"1282.505m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-198252f1bbf4\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1282.505",
+          "3"
+        ],
+        "actual_numbers": [
+          "1282.505",
+          "3"
+        ]
+      },
+      "duration_sec": 0.009,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 56,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2022033117事件在2022-04-02 02:00的出流量是多少？",
+      "expected": "257m3/s。",
+      "actual": "257m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"257m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-dc3355688091\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "257",
+          "3"
+        ],
+        "actual_numbers": [
+          "257",
+          "3"
+        ]
+      },
+      "duration_sec": 0.044,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 57,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "水位169.15m对应的库容是多少？",
+      "expected": "41.90亿m³。",
+      "actual": "41.90亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"41.90亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-0b48cbde467b\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "41.9"
+        ],
+        "actual_numbers": [
+          "3",
+          "41.9"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 58,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年7月计划来水量是多少？",
+      "expected": "3.2亿m³。",
+      "actual": "3.2亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"3.2亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-581f1e423640\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "3.2"
+        ],
+        "actual_numbers": [
+          "3",
+          "3.2"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 59,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "高水位预警的触发条件是什么？",
+      "expected": "当滩坑水库蓄水位超过土地征用线（坝前水位160.00m），且预报滩坑水库最高水位将达到移民线（坝前水位161.50m）时，触发高水位预警。",
+      "actual": "当滩坑水库蓄水位超过土地征用线（坝前水位160.00m），且预报滩坑水库最高水位将达到移民线（坝前水位161.50m）时，触发高水位预警。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"当滩坑水库蓄水位超过土地征用线（坝前水位160.00m），且预报滩坑水库最高水位将达到移民线（坝前水位161.50m）时，触发高水位预警。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-5a0681c8850e\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "160",
+          "161.5"
+        ],
+        "actual_numbers": [
+          "160",
+          "161.5"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 60,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "溢洪道闸门的开启顺序是什么？",
+      "expected": "开启顺序为：#1→#6→#3→#4→#2→#5。",
+      "actual": "开启顺序为：#1→#6→#3→#4→#2→#5。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"开启顺序为：#1→#6→#3→#4→#2→#5。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-c180fd669a1d\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "actual_numbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 61,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "预定闸门开启前多久拉响泄洪警报？",
+      "expected": "在预定闸门开启时间前1小时拉泄洪警报。",
+      "actual": "在预定闸门开启时间前1小时拉泄洪警报。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"在预定闸门开启时间前1小时拉泄洪警报。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-7fad3d01a551\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1"
+        ],
+        "actual_numbers": [
+          "1"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 62,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "汛期库水位处于控制蓄水位至161.50m之间时，滩坑水库按什么规则调度？",
+      "expected": "与瓯江干流洪水实行错峰调度，下泄控制鹤城站流量不超过14000m3/s。",
+      "actual": "与瓯江干流洪水实行错峰调度，下泄控制鹤城站流量不超过14000m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"与瓯江干流洪水实行错峰调度，下泄控制鹤城站流量不超过14000m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-f0570f0d18b6\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "14000",
+          "3"
+        ],
+        "actual_numbers": [
+          "14000",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 63,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "生态流量控制由谁执行？",
+      "expected": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "actual": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"由浙江浙能北海水力发电有限公司按规定执行。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-afdd2d5bee03\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 64,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年10月计划来水量是多少？",
+      "expected": "1.2亿m³。",
+      "actual": "1.2亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"1.2亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-254d1926ec2b\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1.2",
+          "3"
+        ],
+        "actual_numbers": [
+          "1.2",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 65,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "当Z＞165.27m时，水库按什么方式下泄洪水？",
+      "expected": "溢洪道闸门全部打开下泄洪水，并开启泄洪洞参与泄洪，发电暂停，即Q泄=Q溢+Q洞。",
+      "actual": "溢洪道闸门全部打开下泄洪水，并开启泄洪洞参与泄洪，发电暂停，即Q泄=Q溢+Q洞。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"溢洪道闸门全部打开下泄洪水，并开启泄洪洞参与泄洪，发电暂停，即Q泄=Q溢+Q洞。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-2125a36e0a00\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 66,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "滩坑水库防洪高水位是多少？",
+      "expected": "161.50m。",
+      "actual": "161.50m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"161.50m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-5d2ee8108e28\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "161.5"
+        ],
+        "actual_numbers": [
+          "161.5"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 67,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "闸门运行时的开孔原则是什么？",
+      "expected": "多数孔开启，切忌少数孔高开度泄洪。",
+      "actual": "多数孔开启，切忌少数孔高开度泄洪。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"多数孔开启，切忌少数孔高开度泄洪。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-057eb12b6b35\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 68,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2013121702事件在2013-12-16 14:00的出流量是多少？",
+      "expected": "4m3/s。",
+      "actual": "4m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"4m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-a51e0fbd0336\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "4"
+        ],
+        "actual_numbers": [
+          "3",
+          "4"
+        ]
+      },
+      "duration_sec": 0.011,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 69,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "在“通讯孤岛”情况下，当161.50m≤库水位≤162.84m且中断前未收到调度指令时，水库如何调度？",
+      "expected": "根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过8630m3/s控制。",
+      "actual": "根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过8630m3/s控制。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"根据来水和水位情况，逐步增开泄洪闸门，水库下泄流量按不超过8630m3/s控制。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-ab4293e1d54a\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "8630"
+        ],
+        "actual_numbers": [
+          "3",
+          "8630"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 70,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "兴利调度由谁执行？",
+      "expected": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "actual": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"由浙江浙能北海水力发电有限公司按规定执行。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-42dff2c65a51\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 71,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年计划年上游取水量是多少？",
+      "expected": "0.257亿m³。",
+      "actual": "0.257亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"0.257亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-28148f8dc321\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "0.257",
+          "3"
+        ],
+        "actual_numbers": [
+          "0.257",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 72,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库正常蓄水位是多少？",
+      "expected": "160.00m。",
+      "actual": "160.00m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"160.00m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-8ab14da339b3\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "160"
+        ],
+        "actual_numbers": [
+          "160"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 73,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "台汛期库水位超过156.50m时，调度权归谁？",
+      "expected": "调度权归丽水市水利局。",
+      "actual": "调度权归丽水市水利局。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"调度权归丽水市水利局。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-bdbe5d29bb8e\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 74,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年11月计划来水量是多少？",
+      "expected": "1.4亿m³。",
+      "actual": "1.4亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"1.4亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-8a3788b84218\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1.4",
+          "3"
+        ],
+        "actual_numbers": [
+          "1.4",
+          "3"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 75,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_inflow",
+      "question": "2012062402事件在2012-06-26 05:00的入流量是多少？",
+      "expected": "410.9m3/s。",
+      "actual": "410.9m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"410.9m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-8f1c40c7ea3d\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "410.9"
+        ],
+        "actual_numbers": [
+          "3",
+          "410.9"
+        ]
+      },
+      "duration_sec": 0.026,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 76,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年1月月初水位是多少？",
+      "expected": "150.93m。",
+      "actual": "150.93m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"150.93m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-39158132513c\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "150.93"
+        ],
+        "actual_numbers": [
+          "150.93"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 77,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "气象预报流域有暴雨时，预泄应如何调整？",
+      "expected": "根据预报降雨量级适当加大预泄。",
+      "actual": "根据预报降雨量级适当加大预泄。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"根据预报降雨量级适当加大预泄。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-11db89c98573\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 78,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "生态流量控制按什么规则执行？",
+      "expected": "按照生态流量有关规定执行。",
+      "actual": "按照生态流量有关规定执行。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"按照生态流量有关规定执行。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-9a915bc9a291\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 79,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "梅汛期库水位不超过160.00m时，调度权归谁？",
+      "expected": "调度权归浙江浙能北海水力发电有限公司。",
+      "actual": "调度权归浙江浙能北海水力发电有限公司。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"调度权归浙江浙能北海水力发电有限公司。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-641b895cee83\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 80,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "当Z＞161.70m时，水库按什么方式下泄洪水？",
+      "expected": "溢洪道闸门全部打开下泄洪水，电站机组参与泄洪，即Q泄=Q溢+Q机。",
+      "actual": "溢洪道闸门全部打开下泄洪水，电站机组参与泄洪，即Q泄=Q溢+Q机。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"溢洪道闸门全部打开下泄洪水，电站机组参与泄洪，即Q泄=Q溢+Q机。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-09292dc3c2e5\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 81,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2022061823事件在2022-06-19 11:00的出流量是多少？",
+      "expected": "542.7m3/s。",
+      "actual": "542.7m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"542.7m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-00be203704f2\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "542.7"
+        ],
+        "actual_numbers": [
+          "3",
+          "542.7"
+        ]
+      },
+      "duration_sec": 0.01,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 82,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "台汛期库水位低于156.50m时，调度权归谁？",
+      "expected": "调度权归浙江浙能北海水力发电有限公司。",
+      "actual": "调度权归浙江浙能北海水力发电有限公司。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"调度权归浙江浙能北海水力发电有限公司。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-6caae7427cc8\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 83,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "2025年滩坑水库梅汛期、非汛期、台汛期的控制蓄水位分别是多少？",
+      "expected": "梅汛期控制蓄水位160.00m，非汛期控制蓄水位160.00m，台汛期控制蓄水位156.50m。除调洪等特殊情况外，不得超控制蓄水位运行。",
+      "actual": "梅汛期控制蓄水位160.00m，非汛期控制蓄水位160.00m，台汛期控制蓄水位156.50m。除调洪等特殊情况外，不得超控制蓄水位运行。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"梅汛期控制蓄水位160.00m，非汛期控制蓄水位160.00m，台汛期控制蓄水位156.50m。除调洪等特殊情况外，不得超控制蓄水位运行。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-0d5512d93ca7\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "156.5",
+          "160"
+        ],
+        "actual_numbers": [
+          "156.5",
+          "160"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 84,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站流量达到13000m3/s及以上时，调度令需同步抄送哪些地方单位？",
+      "expected": "需同时抄送温州市防指、温州市水利局、温州市住建局。",
+      "actual": "需同时抄送温州市防指、温州市水利局、温州市住建局。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"需同时抄送温州市防指、温州市水利局、温州市住建局。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-38578f92b709\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 85,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑拦河坝最大坝高是多少？",
+      "expected": "162m。",
+      "actual": "162m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"162m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-a0dc591fcaf2\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "162"
+        ],
+        "actual_numbers": [
+          "162"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 86,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "当库水位超过161.5m时，应如何运行？",
+      "expected": "逐渐开启溢洪道闸门直至全开。",
+      "actual": "逐渐开启溢洪道闸门直至全开。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"逐渐开启溢洪道闸门直至全开。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-be8e7a271991\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 87,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年最大3小时洪峰出现时间是什么时候？",
+      "expected": "6月16日23时。",
+      "actual": "6月16日23时。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"6月16日23时。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-3a161847d9fa\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "16",
+          "23",
+          "6"
+        ],
+        "actual_numbers": [
+          "16",
+          "23",
+          "6"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 88,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "水位160m对应的库容是多少？",
+      "expected": "35.20亿m³。",
+      "actual": "35.20亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"35.20亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-ade277d751ef\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "35.2"
+        ],
+        "actual_numbers": [
+          "3",
+          "35.2"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 89,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "泄洪放水预警的触发条件是什么？",
+      "expected": "当水库水位逼近汛限水位（梅汛期159.50m，台汛期156.00m），且根据气象预报预计有弃水可能时，应启动泄洪放水预警相关处置。",
+      "actual": "当水库水位逼近汛限水位（梅汛期159.50m，台汛期156.00m），且根据气象预报预计有弃水可能时，应启动泄洪放水预警相关处置。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"当水库水位逼近汛限水位（梅汛期159.50m，台汛期156.00m），且根据气象预报预计有弃水可能时，应启动泄洪放水预警相关处置。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-9a3e074770d2\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "156",
+          "159.5"
+        ],
+        "actual_numbers": [
+          "156",
+          "159.5"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 90,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "预报滩坑坝址至鹤城站区间洪水将达到或超过14000m3/s时，水库应如何调度？",
+      "expected": "水库关闸。",
+      "actual": "水库关闸。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"水库关闸。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-5c19dfec9c2b\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 91,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2012022323事件在2012-02-26 11:00的出流量是多少？",
+      "expected": "107.4m3/s。",
+      "actual": "107.4m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"107.4m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-520ea5e41449\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "107.4",
+          "3"
+        ],
+        "actual_numbers": [
+          "107.4",
+          "3"
+        ]
+      },
+      "duration_sec": 0.009,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 92,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_inflow",
+      "question": "2013061314事件在2013-06-12 20:00的入流量是多少？",
+      "expected": "509.4m3/s。",
+      "actual": "509.4m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"509.4m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-12e4c2645e0e\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "509.4"
+        ],
+        "actual_numbers": [
+          "3",
+          "509.4"
+        ]
+      },
+      "duration_sec": 0.008,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 93,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2010062002事件在2010-06-17 05:00的出流量是多少？",
+      "expected": "47.6m3/s。",
+      "actual": "47.6m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"47.6m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-a5630693192f\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "47.6"
+        ],
+        "actual_numbers": [
+          "3",
+          "47.6"
+        ]
+      },
+      "duration_sec": 0.017,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 94,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年年平均耗水率是多少？",
+      "expected": "3.34m³/kW·h。",
+      "actual": "3.34m³/kW·h。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"3.34m³/kW·h。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-3043dfc503cd\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "3.34"
+        ],
+        "actual_numbers": [
+          "3",
+          "3.34"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 95,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库校核洪水位是多少？",
+      "expected": "169.15m。",
+      "actual": "169.15m。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"169.15m。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-37e73c9dfb4f\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "169.15"
+        ],
+        "actual_numbers": [
+          "169.15"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 96,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年6月计划来水量是多少？",
+      "expected": "7.8亿m³。",
+      "actual": "7.8亿m³。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"7.8亿m³。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-f62f8f36f796\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "3",
+          "7.8"
+        ],
+        "actual_numbers": [
+          "3",
+          "7.8"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 97,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2018060608事件在2018-06-08 11:00的出流量是多少？",
+      "expected": "277.5m3/s。",
+      "actual": "277.5m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"277.5m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-93bdbb24218d\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "277.5",
+          "3"
+        ],
+        "actual_numbers": [
+          "277.5",
+          "3"
+        ]
+      },
+      "duration_sec": 0.01,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 98,
+      "source": "question_bank",
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "高水位预警由谁报告、由谁发出？",
+      "expected": "由浙江浙能北海水力发电有限公司及时报告丽水市水利局，由丽水市水利局提请丽水市防指发出高水位预警。",
+      "actual": "由浙江浙能北海水力发电有限公司及时报告丽水市水利局，由丽水市水利局提请丽水市防指发出高水位预警。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"由浙江浙能北海水力发电有限公司及时报告丽水市水利局，由丽水市水利局提请丽水市防指发出高水位预警。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-c5bd92374cff\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": false,
+        "expected_numbers": [],
+        "actual_numbers": []
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 99,
+      "source": "question_bank",
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年年累计发电量是多少？",
+      "expected": "113442.504万kW·h。",
+      "actual": "113442.504万kW·h。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"113442.504万kW·h。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-84e2321ca3b6\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "113442.504"
+        ],
+        "actual_numbers": [
+          "113442.504"
+        ]
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T17:10:22"
+    },
+    {
+      "index": 100,
+      "source": "event_timeseries",
+      "top_name": "reservoir_event_timeseries",
+      "category_name": "event_outflow",
+      "question": "2007081917事件在2007-08-20 05:00的出流量是多少？",
+      "expected": "1670m3/s。",
+      "actual": "1670m3/s。",
+      "raw_actual": "{\"code\": 0, \"message\": \"ok\", \"data\": {\"answer\": \"1670m3/s。\", \"route\": \"local\", \"basis\": \"来自本地解析后的结构化 JSON 数据\"}, \"trace_id\": \"qa-local-f2e3005be022\"}",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 1.0,
+        "numbers_hit": true,
+        "expected_numbers": [
+          "1670",
+          "3"
+        ],
+        "actual_numbers": [
+          "1670",
+          "3"
+        ]
+      },
+      "duration_sec": 0.022,
+      "finished_at": "2026-04-23T17:10:22"
+    }
+  ],
+  "result_path": "D:\\a_hydro\\0420\\reservoir_qa\\data\\eval\\all_mixed_eval_results.json"
+}

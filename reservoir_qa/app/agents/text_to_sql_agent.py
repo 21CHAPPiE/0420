@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+from functools import lru_cache
+
 from agno.agent import Agent
 
 from app.agents.common import build_openai_model
+from app.agents.structured_output import OUTPUT_SCHEMA, build_common_output_instructions
 from app.core.config import get_config
 from app.core.sql_guard import ReadOnlySQLTools
 from app.rag.knowledge_loader import build_sql_semantics_knowledge
@@ -22,9 +25,11 @@ ALLOWED_TABLES = [
     "reservoir_flood_forecast_stat",
     "reservoir_contact_directory",
     "reservoir_engineering_characteristic",
+    "reservoir_event_timeseries",
 ]
 
 
+@lru_cache(maxsize=1)
 def build_text_to_sql_agent() -> Agent:
     config = get_config()
     sql_tools = ReadOnlySQLTools(
@@ -37,7 +42,8 @@ def build_text_to_sql_agent() -> Agent:
         tools=[sql_tools],
         knowledge=build_sql_semantics_knowledge(),
         search_knowledge=True,
-        markdown=True,
+        markdown=False,
+        output_schema=OUTPUT_SCHEMA,
         instructions=[
             "你是水库问数助手，只能回答结构化数据库中可查询的问题。",
             "在生成 SQL 前，先用 list_tables / describe_table 理解表结构。",
@@ -48,5 +54,6 @@ def build_text_to_sql_agent() -> Agent:
             "结果回答用中文，结论先行，必要时给出简短表格摘要。",
             "不要输出你的思考过程、检索步骤、工具调用过程或诸如“让我先查看”的中间话术。",
             "只输出对用户有用的最终答案。",
-        ],
+        ]
+        + build_common_output_instructions("sql"),
     )

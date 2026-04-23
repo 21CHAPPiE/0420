@@ -1,0 +1,825 @@
+{
+  "created_at": "2026-04-23T10:59:04",
+  "question_set_path": "D:\\a_hydro\\0420\\reservoir_qa\\问答问题(1).json",
+  "sample_size_per_category": 5,
+  "sample_count": 40,
+  "pass": 2,
+  "partial": 2,
+  "fail": 36,
+  "avg_duration_sec": 15.898,
+  "max_duration_sec": 82.48,
+  "by_top": {
+    "6.2.2_调度规则与方案依据问答演示": {
+      "pass": 0,
+      "partial": 2,
+      "fail": 18,
+      "total": 20
+    },
+    "问数清单": {
+      "pass": 2,
+      "partial": 0,
+      "fail": 18,
+      "total": 20
+    }
+  },
+  "by_category": {
+    "6.2.2_调度规则与方案依据问答演示 / 调度原则类": {
+      "pass": 0,
+      "partial": 2,
+      "fail": 3,
+      "total": 5
+    },
+    "6.2.2_调度规则与方案依据问答演示 / 调度权限类": {
+      "pass": 0,
+      "partial": 0,
+      "fail": 5,
+      "total": 5
+    },
+    "6.2.2_调度规则与方案依据问答演示 / 操作规则类": {
+      "pass": 0,
+      "partial": 0,
+      "fail": 5,
+      "total": 5
+    },
+    "6.2.2_调度规则与方案依据问答演示 / 应急与预警类": {
+      "pass": 0,
+      "partial": 0,
+      "fail": 5,
+      "total": 5
+    },
+    "问数清单 / 一、工程基础参数类问数（适合测试静态参数问数）": {
+      "pass": 2,
+      "partial": 0,
+      "fail": 3,
+      "total": 5
+    },
+    "问数清单 / 二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）": {
+      "pass": 0,
+      "partial": 0,
+      "fail": 5,
+      "total": 5
+    },
+    "问数清单 / 三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）": {
+      "pass": 0,
+      "partial": 0,
+      "fail": 5,
+      "total": 5
+    },
+    "问数清单 / 四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）": {
+      "pass": 0,
+      "partial": 0,
+      "fail": 5,
+      "total": 5
+    }
+  },
+  "results": [
+    {
+      "index": 1,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "2025年滩坑水库梅汛期、非汛期、台汛期的控制蓄水位分别是多少？",
+      "expected": "梅汛期控制蓄水位160.00m，非汛期控制蓄水位160.00m，台汛期控制蓄水位156.50m。除调洪等特殊情况外，不得超控制蓄水位运行。",
+      "actual": "根据知识库信息，2025年滩坑水库各时期的控制蓄水位（限制水位/起调水位）如下：\n\n*   **梅汛期**（4月15日-6月30日）：**160.00m**\n*   **非汛期**（枯水期，参照梅汛期规则）：**160.00m**\n*   **台汛期**（7月16日-10月15日）：**156.50m**\n\n**详细说明：**\n*   **梅汛期与非汛期**：限制水位和起调水位均为 160.00m。\n*   **台汛期**：限制水位和起调水位均为 156.50m。此水位比梅汛期低 3.50m，旨在预留更多防洪库容以应对台风暴雨风险。\n*   **过渡期**（7月1日-7月15日）：若预报有台风影响，需在台风影响前将水位降至台汛期限制水位 156.50m。",
+      "verdict": "partial",
+      "metrics": {
+        "ratio": 0.065,
+        "numbers_hit": true,
+        "chunk_hit_count": 0,
+        "chunk_total": 5,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 39.452,
+      "finished_at": "2026-04-23T10:49:07"
+    },
+    {
+      "index": 2,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "2025年梅台过渡期库水位控制要求是什么？",
+      "expected": "梅台过渡期应逐步降低库水位；接省、市气象部门预报有台风、暴雨影响时，必须及时将库水位降至156.50m。",
+      "actual": "根据检索到的文档内容，关于2025年梅台过渡期（即梅汛期至台汛期的过渡阶段）的库水位控制要求如下：\n\n**1. 过渡期时间定义**\n*   **时间段**：7月1日至7月15日。\n*   **依据**：文档《flood_control_explanations》中明确划分了汛期阶段，其中“过渡期”定为7月1日到7月15日。\n\n**2. 水位控制核心要求**\n在过渡期内，水位控制采取**动态预降**策略，而非固定的单一水位限值：\n*   **触发条件**：当预报有台风影响时。\n*   **控制目标**：必须在台风影响前将库水位降至 **156.50米**。\n*   **控制手段**：通过机组满发和开启溢洪道泄洪等方式进行预泄。\n*   **依据**：文档《flood_control_explanations》中指出：“过渡期内，当预报有台风影响时，滩坑水库通过机组满发和开启溢洪道泄洪等方式，在台风影响前将水位降至156.50m。”\n\n**3. 相关背景与对比**\n*   **梅汛期水位**：限制水位和起调水位为 **160.00米**。\n*   **台汛期水位**：限制水位和起调水位为 **156.50米**（比梅汛期低3.50米）。\n*   **过渡期目的**：为了应对台汛期可能出现的台风暴雨和更强洪水风险，需要预留更多的防洪库容（3.50m的水位差对应的库容），因此在过渡期需根据台风预报提前将水位从梅汛期的160.00m降至台汛期的156.50m。\n\n**总结：**\n2025年梅台过渡期（7月1日-7月15日）的水位控制要求是：**若无台风预报，可维持较高水位运行；一旦预报有台风影响，必须提前泄洪，确保在台风影响前将水位降至156.50米（台汛期限制水位）。**",
+      "verdict": "partial",
+      "metrics": {
+        "ratio": 0.081,
+        "numbers_hit": true,
+        "chunk_hit_count": 0,
+        "chunk_total": 4,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 42.586,
+      "finished_at": "2026-04-23T10:49:50"
+    },
+    {
+      "index": 3,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "预报有大暴雨或洪水，且研判库水位将超过控制蓄水位时，水库应采取什么调度措施？",
+      "expected": "应通过预泄适当降低库水位。",
+      "actual": "根据检索到的《滩坑水库调度规则摘要》及《防洪与分期控制解释》文档内容，当预报有大暴雨或洪水，且研判库水位将超过**控制蓄水位**（即防洪高水位 **161.50m**）时，水库应采取以下调度措施：\n\n1.  **控制泄流流量**：\n    当库水位（Z）在 **161.5m < Z ≤ 161.7m** 区间时，应按 **6000 m³/s** 的流量控制下泄。\n\n2.  **全开溢洪道并机组参与泄洪**：\n    当库水位（Z）超过 **161.7m** 时，应将**溢洪道闸门全部打开**，同时**发电机组参与泄洪**（即机组满发配合泄洪）。\n\n3.  **开启泄洪洞并暂停发电**（若水位继续上涨）：\n    若库水位进一步上涨超过 **165.27m**，需**开启泄洪洞**参与泄洪，此时**发电暂停**。\n\n**依据来源：**\n*   **《防洪与分期控制解释》**：明确了防洪高水位为161.50m，以及不同水位区间（161.5m-161.7m，>161.7m，>165.27m）对应的具体调度动作。\n*   **《滩坑水库调度规则摘要》**：规定了161.5m以上水位的具体调度规则，即“161.5m < Z <= 161.7m 时，按 6000m3/s 控制流量下泄”以及“Z > 161.7m 时，溢洪道闸门全部打开，机组参与泄洪”。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.008,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 44.072,
+      "finished_at": "2026-04-23T10:50:34"
+    },
+    {
+      "index": 4,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "汛期库水位处于控制蓄水位至161.50m之间时，滩坑水库按什么规则调度？",
+      "expected": "与瓯江干流洪水实行错峰调度，下泄控制鹤城站流量不超过14000m3/s。",
+      "actual": "根据检索到的《滩坑水库调度规则摘要》及《滩坑水电站防洪与分期控制解释》等文档内容，汛期当库水位处于**控制蓄水位**（台汛期为156.50m，梅汛期为160.00m）至**161.50m**之间时，滩坑水库按**补偿凑泄**方式进行调度。\n\n具体依据如下：\n*   **调度规则**：文档明确指出，“台汛期 156.5m < Z <= 161.5m 时，按补偿凑泄方式调度”；“梅汛期和枯水期 160.0m < Z <= 161.5m 时，按补偿凑泄方式调度”。\n*   **水位界定**：161.50m为滩坑水库的**防洪高水位**。当水位超过此高度（161.5m < Z <= 161.7m）时，调度方式将转变为按6000m³/s控制流量下泄。\n\n**结论：**\n在此水位区间内，调度规则为**补偿凑泄**。即根据下游防洪要求，结合入库流量，通过水库调蓄，按补偿下游洪水的方式进行泄流调度。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.059,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 2,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 38.456,
+      "finished_at": "2026-04-23T10:51:12"
+    },
+    {
+      "index": 5,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度原则类",
+      "question": "预报滩坑坝址至鹤城站区间洪水将达到或超过14000m3/s时，水库应如何调度？",
+      "expected": "水库关闸。",
+      "actual": "根据《滩坑水电站大坝运行安全（防洪抢险）应急预案》及《浙江省人民政府防汛防台抗旱指挥部关于印发瓯江干流洪水调度方案的通知》（浙防指〔2022〕11号）等相关规定，当预报滩坑坝址至鹤城站区间洪水将达到或超过 **14000m³/s** 时，水库调度措施如下：\n\n**1. 开启泄洪洞参与泄洪，机组满发**\n当入库洪水流量达到或超过 14000m³/s（对应频率约为 P=0.5% 至 P=0.2% 之间的特大洪水，参考文档中 P=0.5% 洪峰流量为 17500m³/s，P=0.2% 为 20300m³/s，而 14000m³/s 已远超溢洪道单独泄流能力），水库水位将迅速上涨。\n*   **调度动作**：在溢洪道闸门全部开启的基础上，**开启泄洪洞（导流洞改建）参与泄洪**。\n*   **发电调度**：发电机组保持满负荷运行（约 400m³/s - 600m³/s，视具体水头而定），协助泄洪。\n*   **依据**：根据文档中“防洪特征水位成果表”及“调度规则”，当水位超过 161.7m 或遭遇大洪水时，需启用泄洪洞。特别是当水位达到 163.54m（P=0.5%）至 165.27m（P=0.2%）区间时，必须开启泄洪洞。\n\n**2. 执行“补偿调度”或“错峰调度”原则（视具体指令）**\n*   **正常情况**：按照浙江省防汛防台抗旱指挥部及丽水市水利局的调度指令执行。若下游瓯江干流（鹤城站）防洪压力巨大，水库需进行**补偿调度**，即通过拦蓄洪水，控制出库流量，使下游鹤城站流量控制在安全泄量以下（通常鹤城站安全泄量远低于 14000m³/s，需滩坑水库大幅削峰）。\n*   **通讯中断特殊情况**：若发生“通讯孤岛”情况（无法接收调度指令），且水库水位超过 **161.50m**（防洪高水位）并继续上涨：\n    *   当水位在 **162.84m～163.54m**（对应 P=1%~0.5%）时，若未收到指令，逐步增开泄洪闸门，控制下泄流量不超过 **9270m³/s**（此数值小于 14000m³/s，说明 14000m³/s 的来水下水库必涨）。\n    *   当水位在 **163.54m～164.30m**（对应 P=0.5%~0.2%）时，若未收到指令，控制下泄流量不超过 **9970m³/s**。\n    *   当水位超过 **165.27m**（P=0.2%）时，**泄洪洞闸门全部打开，溢洪道闸门全部打开，机组停机**（或视情况满发），不再控制下泄流量，以确保大坝安全。\n    *   *注：14000m³/s 的区间洪水若持续，水库水位极可能迅速突破 163m 甚至更高，最终可能需按保坝模式（全开）调度。*\n\n**3. 预警与响应**\n*   **泄洪预警**：在开启泄洪洞或大幅加大泄量前 1 小时，必须拉响泄洪警报，并对下游预警范围（上游坝前 300m，下游至左右岸交通桥）进行巡逻检查，确保人员安全。\n*   **汇报**：及时向丽水市水利局及防汛指挥部汇报水情和工情。\n\n**总结：**\n当预报区间洪水≥14000m³/s时，滩坑水库进入**紧急防洪调度状态**。核心措施是：**溢洪道全开 + 开启泄洪洞 + 机组满发**。若水位继续上涨危及大坝安全（如超过 165.27m），则采取**保坝措施**，所有泄洪设施全开，不再控制下泄流量。具体出库流量需严格服从浙江省/丽水市防汛防台抗旱指挥部的实时调度指令，以减轻下游瓯江干流（鹤城站）的防洪压力。\n\n**依据来源：**\n*   《滩坑水电站大坝运行安全（防洪抢险）应急预案》（丽灾防〔2024〕1号批复）\n*   《浙江省人民政府防汛防台抗旱指挥部关于印发瓯江干流洪水调度方案的通知》（浙防指〔2022〕11号）\n*   文档中“5.8 洪水调节计算成果表”及“4.3.2 在‘通讯孤岛’下有关滩坑水电站水库调度原则”。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.004,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 74.57,
+      "finished_at": "2026-04-23T10:52:27"
+    },
+    {
+      "index": 6,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站遭遇50年一遇以下洪水时，滩坑水库由谁调度？",
+      "expected": "由丽水市水利局调度。",
+      "actual": "根据文档内容，当青田鹤城水文站遭遇**50年一遇以下洪水**（对应防洪标准为二十年一遇，即P=5%）时，滩坑水库的调度情况如下：\n\n*   **调度主体**：由**丽水市防汛防台抗旱指挥部**（或丽水市水利局）进行调度。\n    *   **依据**：文档指出汛期洪水调度按照《浙江省人民政府防汛防台抗旱指挥部关于印发瓯江干流洪水调度方案的通知》等规定执行。当预报有大暴雨洪水发生，丽水市水利局应及时组织会商；当研判滩坑水库坝前水位将超过汛限水位时，需通过预泄降低水位。在“通讯孤岛”应急情况下，若中断前已收到**丽水市水利局**的泄洪调度指令，则严格按照指令执行。这表明正常情况下的调度权在丽水市防汛防台抗旱指挥部（由丽水市水利局具体执行/会商）。\n*   **具体调度方式**：\n    *   在**台汛期**（4月15日-7月15日），起调水位为**156.50m**。当遭遇50年一遇以下洪水（如P=5%，即20年一遇洪水，表5.8-1显示洪峰流量10400m³/s），水库按补偿凑泄方式调度，控制最高库水位不超过防洪高水位**161.50m**，最大下泄流量控制在**6361m³/s**。\n    *   在**梅汛期**（7月15日-10月15日）和枯水期，限制水位为**160.00m**。\n\n**总结**：滩坑水库由**丽水市防汛防台抗旱指挥部**（具体由**丽水市水利局**组织会商和下达指令）负责调度。电站业主单位（浙江浙能北海水力发电有限公司）负责执行调度指令。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.023,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 59.09,
+      "finished_at": "2026-04-23T10:53:26"
+    },
+    {
+      "index": 7,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站遭遇50年一遇及以上洪水时，滩坑水库由谁调度？",
+      "expected": "由省水利厅调度。",
+      "actual": "根据检索到的《滩坑水电站运行设计报告》及《滩坑水电站防洪抢险应急预案》等相关文档内容，当青田鹤城水文站遭遇50年一遇及以上洪水时，滩坑水库的调度权限如下：\n\n**由丽水市水利局调度。**\n\n**依据说明：**\n根据文档中关于“滩坑水电站的调度权限”的规定（见文档第2.5节“防洪调度及运用”）：\n1.  **梅汛期**（4月15日-6月30日）：当水库水位超过正常蓄水位**160.00m**时，调度权归**丽水市水利局**。\n2.  **台汛期**（7月16日-10月15日）：当水库水位超过台汛限制水位**156.50m**时，调度权归**丽水市水利局**。\n\n**分析推导：**\n*   根据文档中的“防洪特征水位成果表”（表2.7-1），**50年一遇**（P=2%）洪水对应的最高库水位约为**162.84m**（台汛期数据）。\n*   该水位（162.84m）远高于台汛限制水位（156.50m）和正常蓄水位（160.00m）。\n*   因此，当遭遇50年一遇及以上洪水时，水库水位必然超过规定的限额水位，此时调度权限属于**丽水市水利局**。\n\n此外，文档提到在“通讯孤岛”等极端特殊情况下，若通讯中断前未收到丽水市水利局的调度指令，电站将根据预案按既定规则（如控制下泄流量不超过8630m³/s等）进行应急调度，但常规及预案规定的指挥调度主体仍为丽水市水利局。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.011,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 43.094,
+      "finished_at": "2026-04-23T10:54:09"
+    },
+    {
+      "index": 8,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "青田鹤城水文站流量达到13000m3/s及以上时，调度令需同步抄送哪些地方单位？",
+      "expected": "需同时抄送温州市防指、温州市水利局、温州市住建局。",
+      "actual": "根据提供的文档内容，其中**未包含**关于“青田鹤城水文站流量达到13000m³/s及以上时，调度令需同步抄送哪些地方单位”的具体规定。\n\n文档中仅提及了以下相关调度原则和信息，但无具体的抄送单位列表：\n1.  **调度控制权**：当滩坑水库水位超过正常蓄水位（160.00m，梅汛期）或台汛限制水位（156.50m，台汛期）时，调度权归**丽水市水利局**；在此水位以下时，调度权归浙江浙能北海水力发电有限公司。\n2.  **调度协调**：在防洪调度中，滩坑水库下泄流量需考虑传播至**鹤城站**（即青田鹤城水文站）的时间，并与滩坑至鹤城区间流量之和控制在安全泄量（如14000m³/s）以内。\n3.  **预警与报告**：当出现高水位或需要泄洪时，电站需向**丽水市水利局**汇报，由丽水市防指发出预警；泄洪预警范围包括上游坝前300m及下游至左右岸交通桥。\n4.  **应急预案**：《滩坑水电站大坝运行安全（防洪抢险）应急预案》已报丽水市防汛防台抗旱指挥部、丽水市水利局，并获得批复。\n\n**结论**：现有检索到的文档片段（主要涉及滩坑水电站调度规则、应急预案框架及通讯孤岛情况下的调度原则）中，**没有列出**当鹤城站流量达到特定阈值（13000m³/s）时调度令需同步抄送的具体地方单位名单。这通常属于具体的《瓯江干流洪水调度方案》或丽水市/青田县具体的防汛调度实施细则中的条款，而当前知识库未收录该详细列表。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.042,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 3,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 54.306,
+      "finished_at": "2026-04-23T10:55:03"
+    },
+    {
+      "index": 9,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "预报将遭遇风暴潮或台风，且高潮位顶托将威胁温州市城区防洪安全时，滩坑水库错峰调度应如何启动？",
+      "expected": "由温州市水利局与丽水市水利局会商，报省水利厅同意后，由丽水市水利局适时实施滩坑水库错峰调度。",
+      "actual": "根据现有文档内容，当预报将遭遇风暴潮或台风，且高潮位顶托将威胁温州市城区防洪安全时，文档中**未直接包含**针对“温州市城区防洪安全”这一特定条件启动滩坑水库错峰调度的具体条文或量化指标。\n\n现有文档中关于滩坑水库在台风、高水位及防洪调度方面的相关规定如下，可作为参考依据，但需注意其主要针对的是水库自身安全、下游青田县及丽水市流域的调度原则：\n\n1.  **台风期预泄与水位控制原则**\n    *   **起调水位降低**：为应对台风暴雨和更强的洪水风险，滩坑水库在**台汛期**（7月16日-10月15日）的限制水位和起调水位设定为**156.50m**，比梅汛期（160.00m）低3.50m，以预留更多防洪库容。\n    *   **过渡期预泄**：在过渡期（7月1日-7月15日），若预报有台风影响，水库会通过机组满发和开启溢洪道泄洪等方式，在台风影响前将水位降至156.50m。\n    *   **依据来源**：《滩坑水库防洪与分期控制解释》、《滩坑电站水库调度图》。\n\n2.  **泄洪预警与“早动、快动、小动”原则**\n    *   **预泄条件**：当水库水位逼近汛限水位（台汛期为156.00m），且根据气象预报预计有弃水可能时，应及时汇报并实施主动性预泄；若预报流域有暴雨，应根据预报降雨量级适当加大预泄。\n    *   **预警机制**：坚持“早动、快动、小动”的防洪调度原则。在预定闸门开启时间前1小时拉响泄洪警报，并对下游预警范围（上游坝前300m，下游至左右岸交通桥）进行巡逻检查。\n    *   **依据来源**：《滩坑电站防汛应急预案》（4.2.2 泄洪放水预警）。\n\n3.  **调度权限与沟通机制**\n    *   洪水调度需按照《浙江省人民政府防汛防台抗旱指挥部关于印发瓯江干流洪水调度方案的通知》等规定执行。\n    *   当预报有大暴雨洪水发生，丽水市水利局会组织会商。若研判坝前水位将超过汛限水位，通过预泄降低水位。\n    *   **通讯中断时的特殊调度**：若发生通讯中断（“通讯孤岛”），且水位高于161.50m时，若此前未收到调度指令，电站需根据来水和水位情况，逐步增开泄洪闸门，并按不同水位段控制下泄流量（如161.50m-162.84m间不超过8630m³/s等），以确保大坝及下游青田县安全。\n    *   **依据来源**：《滩坑电站防汛应急预案》、《丽水市人民政府防汛防台抗旱指挥部关于同意在“通讯孤岛”下有关滩坑水电站水库调度原则的复函》。\n\n**结论**：\n现有资料主要阐述了滩坑水库为应对台风自身安全及下游青田、丽水流域的常规错峰和预泄策略（如台汛期降低起调水位至156.50m，执行“早动、快动、小动”原则）。**关于“高潮位顶托威胁温州市城区防洪安全”这一特定触发条件下的错峰调度启动指令、具体水位流量配合方案或专项预案，在当前检索到的文档中未见明确记载。** 此类跨区域、受河口潮位顶托影响的复杂调度，通常需依据浙江省或温州市防汛防台抗旱指挥部的实时调度令执行。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.033,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 3,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 82.48,
+      "finished_at": "2026-04-23T10:56:26"
+    },
+    {
+      "index": 10,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "调度权限类",
+      "question": "兴利调度由谁执行？",
+      "expected": "由浙江浙能北海水力发电有限公司按规定执行。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 6.048,
+      "finished_at": "2026-04-23T10:56:32",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 11,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "梅汛期当161.50m＜Z≤161.70m时，水库按多少流量下泄洪水？",
+      "expected": "按6000m3/s控制流量下泄洪水。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 6.806,
+      "finished_at": "2026-04-23T10:56:39",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 12,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "当Z＞161.70m时，水库按什么方式下泄洪水？",
+      "expected": "溢洪道闸门全部打开下泄洪水，电站机组参与泄洪，即Q泄=Q溢+Q机。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.965,
+      "finished_at": "2026-04-23T10:56:45",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 13,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "当Z＞165.27m时，水库按什么方式下泄洪水？",
+      "expected": "溢洪道闸门全部打开下泄洪水，并开启泄洪洞参与泄洪，发电暂停，即Q泄=Q溢+Q洞。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.699,
+      "finished_at": "2026-04-23T10:56:50",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 14,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "溢洪道闸门的开启顺序是什么？",
+      "expected": "开启顺序为：#1→#6→#3→#4→#2→#5。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.185,
+      "finished_at": "2026-04-23T10:56:55",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 15,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "操作规则类",
+      "question": "溢洪道闸门的关闭顺序是什么？",
+      "expected": "关闭顺序为：#5→#2→#4→#3→#6→#1。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.608,
+      "finished_at": "2026-04-23T10:57:01",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 16,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "高水位预警的触发条件是什么？",
+      "expected": "当滩坑水库蓄水位超过土地征用线（坝前水位160.00m），且预报滩坑水库最高水位将达到移民线（坝前水位161.50m）时，触发高水位预警。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.568,
+      "finished_at": "2026-04-23T10:57:07",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 17,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "高水位预警由谁报告、由谁发出？",
+      "expected": "由浙江浙能北海水力发电有限公司及时报告丽水市水利局，由丽水市水利局提请丽水市防指发出高水位预警。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.644,
+      "finished_at": "2026-04-23T10:57:12",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 18,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "高水位预警涉及哪些可能受影响区域？",
+      "expected": "景宁大均、红星、鹤溪、渤海、九龙，青田北山、岭根。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.34,
+      "finished_at": "2026-04-23T10:57:18",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 19,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "发出高水位预警后，需要提前做好哪些工作？",
+      "expected": "提前发布风险预警，做好危险区人员转移、堤防巡防查险及抢险救援准备工作。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.247,
+      "finished_at": "2026-04-23T10:57:23",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 20,
+      "top_name": "6.2.2_调度规则与方案依据问答演示",
+      "category_name": "应急与预警类",
+      "question": "泄洪放水预警的触发条件是什么？",
+      "expected": "当水库水位逼近汛限水位（梅汛期159.50m，台汛期156.00m），且根据气象预报预计有弃水可能时，应启动泄洪放水预警相关处置。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.887,
+      "finished_at": "2026-04-23T10:57:29",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 21,
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水电站总装机容量是多少？",
+      "expected": "604MW（3×200MW+4MW）。",
+      "actual": "滩坑水电站总装机容量为 604 MW。",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.333,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T10:57:29"
+    },
+    {
+      "index": 22,
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库坝址以上流域面积是多少？",
+      "expected": "3330km²。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.694,
+      "finished_at": "2026-04-23T10:57:34",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 23,
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库正常蓄水位是多少？",
+      "expected": "160.00m。",
+      "actual": "滩坑水库正常蓄水位为 160 m。",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 0.435,
+        "numbers_hit": true,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T10:57:34"
+    },
+    {
+      "index": 24,
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库总库容是多少？",
+      "expected": "41.9亿m³。",
+      "actual": "滩坑水库总库容为 41.9 亿m3。",
+      "verdict": "pass",
+      "metrics": {
+        "ratio": 0.667,
+        "numbers_hit": true,
+        "chunk_hit_count": 1,
+        "chunk_total": 1,
+        "chunk_hit_ratio": 1.0
+      },
+      "duration_sec": 0.0,
+      "finished_at": "2026-04-23T10:57:34"
+    },
+    {
+      "index": 25,
+      "top_name": "问数清单",
+      "category_name": "一、工程基础参数类问数（适合测试静态参数问数）",
+      "question": "滩坑水库防洪库容是多少？",
+      "expected": "3.5亿m³。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.637,
+      "finished_at": "2026-04-23T10:57:40",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 26,
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "滩坑水库梅汛期限制水位是多少？",
+      "expected": "160.00m。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.421,
+      "finished_at": "2026-04-23T10:57:45",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 27,
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "滩坑水库台汛期限制水位是多少？",
+      "expected": "156.50m。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.624,
+      "finished_at": "2026-04-23T10:57:51",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 28,
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "滩坑水库防洪高水位是多少？",
+      "expected": "161.50m。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.677,
+      "finished_at": "2026-04-23T10:57:57",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 29,
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "梅台过渡期接到台风、暴雨预报时，应将库水位降至多少？",
+      "expected": "156.50m。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.45,
+      "finished_at": "2026-04-23T10:58:02",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 30,
+      "top_name": "问数清单",
+      "category_name": "二、控制水位与防洪指标类问数（适合测试规则阈值和库容换算）",
+      "question": "库水位在控制蓄水位到161.50m之间时，错峰调度下泄控制鹤城站流量不超过多少？",
+      "expected": "14000m³/s。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.625,
+      "finished_at": "2026-04-23T10:58:08",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 31,
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年计划年降雨量是多少？",
+      "expected": "1560mm。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.482,
+      "finished_at": "2026-04-23T10:58:13",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 32,
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年计划年入库水量是多少？",
+      "expected": "32.7亿m³。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.483,
+      "finished_at": "2026-04-23T10:58:19",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 33,
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年计划年上游取水量是多少？",
+      "expected": "0.257亿m³。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.348,
+      "finished_at": "2026-04-23T10:58:24",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 34,
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年1月计划来水量是多少？",
+      "expected": "0.45亿m³。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.62,
+      "finished_at": "2026-04-23T10:58:30",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 35,
+      "top_name": "问数清单",
+      "category_name": "三、年度/月度调度计划类问数（适合测试表格检索和计划型问数）",
+      "question": "滩坑水电站2025年6月计划来水量是多少？",
+      "expected": "7.8亿m³。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.759,
+      "finished_at": "2026-04-23T10:58:36",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 36,
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "滩坑流域2024年降水量是多少？",
+      "expected": "1995.4mm。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.764,
+      "finished_at": "2026-04-23T10:58:41",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 37,
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "滩坑水库2024年入库径流总量是多少？",
+      "expected": "43.5677亿m³。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.563,
+      "finished_at": "2026-04-23T10:58:47",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 38,
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年滩坑流域共发生几场洪峰流量大于1000m³/s的洪水？",
+      "expected": "4场。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.317,
+      "finished_at": "2026-04-23T10:58:52",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 39,
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年最大3小时洪峰流量是多少？",
+      "expected": "3380m³/s。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.809,
+      "finished_at": "2026-04-23T10:58:58",
+      "exception": "OSError(22, 'Invalid argument')"
+    },
+    {
+      "index": 40,
+      "top_name": "问数清单",
+      "category_name": "四、历史运行统计与洪水调度类问数（适合测试历史统计与事件问数）",
+      "question": "2024年最大3小时洪峰出现时间是什么时候？",
+      "expected": "6月16日23时。",
+      "actual": "EXCEPTION: OSError: [Errno 22] Invalid argument",
+      "verdict": "fail",
+      "metrics": {
+        "ratio": 0.0,
+        "numbers_hit": false,
+        "chunk_hit_count": 0,
+        "chunk_total": 0,
+        "chunk_hit_ratio": 0.0
+      },
+      "duration_sec": 5.549,
+      "finished_at": "2026-04-23T10:59:04",
+      "exception": "OSError(22, 'Invalid argument')"
+    }
+  ]
+}

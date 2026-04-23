@@ -5,7 +5,7 @@ from pathlib import Path
 from sqlalchemy import text
 
 from app.core.config import get_config
-from app.core.db import get_admin_engine
+from app.core.db import get_admin_server_engine
 
 
 def _split_sql_statements(sql_text: str) -> list[str]:
@@ -34,7 +34,7 @@ def _split_sql_statements(sql_text: str) -> list[str]:
 def apply_sql_file(path: Path) -> None:
     sql_text = path.read_text(encoding="utf-8")
     statements = _split_sql_statements(sql_text)
-    engine = get_admin_engine()
+    engine = get_admin_server_engine()
     with engine.begin() as conn:
         for statement in statements:
             conn.execute(text(statement))
@@ -49,4 +49,3 @@ def apply_default_schema() -> None:
 if __name__ == "__main__":
     apply_default_schema()
     print("Schema applied.")
-

@@ -225,6 +225,23 @@ CREATE TABLE IF NOT EXISTS reservoir_engineering_characteristic (
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
+CREATE TABLE IF NOT EXISTS reservoir_event_timeseries (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    reservoir_code VARCHAR(64) NOT NULL,
+    event_id VARCHAR(32) NOT NULL,
+    observation_no INT NOT NULL,
+    event_time DATETIME NOT NULL,
+    rainfall_mm DECIMAL(10,4) DEFAULT NULL,
+    water_level_m DECIMAL(10,3) DEFAULT NULL,
+    outflow_m3s DECIMAL(12,3) DEFAULT NULL,
+    inflow_m3s DECIMAL(12,3) DEFAULT NULL,
+    source_filename VARCHAR(255) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_event_timeseries (reservoir_code, event_id, observation_no),
+    KEY idx_event_timeseries_time (event_time),
+    KEY idx_event_timeseries_event_time (event_id, event_time)
+) ENGINE=InnoDB;
+
 CREATE TABLE IF NOT EXISTS stg_pdf_section_text (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     source_doc VARCHAR(255) NOT NULL,
@@ -242,4 +259,3 @@ CREATE TABLE IF NOT EXISTS stg_pdf_table_row (
     row_json JSON NOT NULL,
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
-

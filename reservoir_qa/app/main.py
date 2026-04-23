@@ -5,11 +5,18 @@ import sys
 
 
 def main() -> None:
+    if hasattr(sys.stdin, "reconfigure"):
+        sys.stdin.reconfigure(encoding="utf-8")
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8")
 
     parser = argparse.ArgumentParser(description="Reservoir QA local runner")
     subparsers = parser.add_subparsers(dest="command", required=True)
+
+    init_parser = subparsers.add_parser("init", help="Initialize runtime and enter interactive Q&A")
+    init_parser.add_argument("--no-chat", action="store_true", help="Only initialize runtime")
 
     subparsers.add_parser("parse-pdf", help="Extract PDF text and build structured JSON")
     subparsers.add_parser("apply-schema", help="Apply SQL schema and readonly-user scripts")
@@ -17,11 +24,22 @@ def main() -> None:
     subparsers.add_parser("load-knowledge", help="Load parsed docs into LanceDB")
 
     ask_parser = subparsers.add_parser("ask", help="Route a question to SQL or RAG")
-    ask_parser.add_argument("question", help="Question in Chinese")
+    ask_parser.add_argument("question", nargs="?", help="Question in Chinese")
 
     args = parser.parse_args()
 
-    if args.command == "parse-pdf":
+    if args.command == "init":
+        from app.core.runtime_init import InitializationError, initialize_runtime, run_interactive_qa
+
+        try:
+            for message in initialize_runtime():
+                print(message)
+        except InitializationError as exc:
+            print(f"Initialization failed: {exc}")
+            raise SystemExit(1) from exc
+        if not args.no_chat:
+            run_interactive_qa()
+    elif args.command == "parse-pdf":
         from app.etl.tankeng_pdf_parser import export_parsed_artifacts
 
         path = export_parsed_artifacts()
@@ -43,8 +61,12 @@ def main() -> None:
         print("Knowledge load complete.")
     elif args.command == "ask":
         from app.agents.router import ask
+        from app.core.runtime_init import run_interactive_qa
 
-        print(ask(args.question))
+        if args.question:
+            print(ask(args.question))
+        else:
+            run_interactive_qa()
 
 
 if __name__ == "__main__":
